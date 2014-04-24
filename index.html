@@ -10,16 +10,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         
-        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
         <nav role="nav">
-            <svg version="1.1" id="logo-nav" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" id="logo-nav" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="40px" height="40px" viewBox="0 0 1052 1052" enable-background="new 0 0 1052 1052" xml:space="preserve">
                 <rect fill="#0071A4" width="1052" height="752"/>
                 <rect y="752" fill="#00284F" width="1052" height="300"/>
@@ -60,8 +61,7 @@
             </svg>
             <ul>
                 <li class="active"><a href="#jssophia">JSSophia</a></li>
-                <li><a href="#prochaine-reunion">Prochaine Réunion</a></li>
-                <li><a href="#sessions-precedentes">Sessions Précédentes</a></li>
+                <li><a href="#sessions">Prochaines sessions</a></li>
                 <li><a href="#intervenants">Intervenants</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -72,7 +72,7 @@
                     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
                 <![endif]-->
                 <div class="logo">
-                    <svg version="1.1" id="Calque_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" id="logo" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="200px" height="200px" viewBox="0 0 1052 1052" enable-background="new 0 0 1052 1052" xml:space="preserve">
                         <rect fill="#0071A4" width="1052" height="752"/>
                         <rect y="752" fill="#00284F" width="1052" height="300"/>
@@ -122,11 +122,11 @@
             </hgroup>
         </header>
         <div class="content" role="main">
-            <section class="prochaine-reunion">
-                <h2 id="prochaine-reunion" class="center">Prochaine réunion: le 28 Novembre 2013</h2>
+            <section id="sessions">
+                <h2>Sessions</h2>
                 <!-- TALKS -->
                 <article>
-                    <h3>JSSophia #7: </h3>
+                    <h3>JSSophia #7</h3>
                     <ul>
                         <li>
                             <h4>CujoJS</h4>
@@ -144,18 +144,14 @@
                                 <a href="https://twitter.com/_dhar">Olivier Audard</a>
                             </h5>
                             <p>
-                                Stylus vs Sass vs compass <br />
+                                Stylus vs Sass vs compass <br>
                                 Exemples avec topcoat
                             </p>
                         </li>
                     </ul>
                 </article>
-            </section>
-            <section class="clearfix">
-                <h2 id="sessions-precedentes">Sessions précédentes</h2>
-
                 <article>
-                    <h3>JSSophia #6: </h3>
+                    <h3>JSSophia #6</h3>
                     <ul>
                         <li>
                             <h4>AngularJS from the source</h4>
@@ -178,7 +174,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>JSWeek (Hors-série): Samedi 23 Mars 2013</h3>
+                    <h3>JSWeek (Hors-série)<span class="date">Samedi 23 Mars 2013</span></h3>
                     <p>
                         À l'espace de coworking <a href="http://www.lessatellites.fr/">Les Satellites</a>, JSSophia et l'<a href="http://www.opencoffeesophia.com/">OCC Sophia</a> se sont associés pour proposer une journée de découverte Javascript et de ses librairies.
                     </p>
@@ -210,7 +206,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>JSSophia #5: Jeudi 21 Février 2013</h3>
+                    <h3>JSSophia #5<span class="date">Jeudi 21 Février 2013</span></h3>
                     <ul class="unstyled">
                         <li>
                             <h4>Atelier HTML5 Games</h4>
@@ -226,17 +222,17 @@
                                 The example is based on KissingTurtles games (Grails48 hackathon project, see http://kissingturtles.cloudfoundry.com/).
 
                                 We will focus on 3 points:
-                                <ol>
+                                </p><ol>
                                     <li>HTML5 canvas programming: canvas 2D API, browser animation effect</li>
                                     <li>Mobile programming with HTML5 and jQuery mobile, Angular etc..</li>
                                     <li>We then delve into multi-players challenges (using event-push Grails plugin).</li>
                                 </ol>
-                            </p>
+                            <p></p>
                         </li>
                     </ul>
                 </article>
                 <article>
-                    <h3>JSSophia #4: Jeudi 11 Octobre 2012</h3>
+                    <h3>JSSophia #4<span class="date">Jeudi 11 Octobre 2012</span></h3>
                     <ul class="unstyled">
                         <li>
                             <h4>Web Application Testing Automation Infrastructure</h4>
@@ -262,7 +258,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>Riviera GUG Coding Week End: 10 août 2012</h3>
+                    <h3>Riviera GUG Coding Week End<span class="date">10 août 2012</span></h3>
                     <ul class="unstyled">
                         <li>
                             <p>
@@ -272,7 +268,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>JSSophia #3: 31 Mai 2012</h3>
+                    <h3>JSSophia #3<span class="date">31 Mai 2012</span></h3>
                     <ul class="unstyled">
                         <li>
                             <h4>Backbone.js</h4> 
@@ -285,7 +281,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>JSSophia #2: 22 Mars 2012</h3>
+                    <h3>JSSophia #2<span class="date">22 Mars 2012</span></h3>
                     <ul class="unstyled">
                         <li>
                             <h4>Alfresco by a JS point of view</h4> 
@@ -302,7 +298,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>JSSophia #1: 19 Janvier 2012</h3>
+                    <h3>JSSophia #1<span class="date">19 Janvier 2012</span></h3>
                     <ul class="unstyled">
                         <li>
                             Première réunion informelle, autour d'un verre.
@@ -310,6 +306,9 @@
                     </ul>
                 </article>
             </section>
+            
+        </div>
+        <footer class="three-cols "> 
             <section class="speakers">
                 <h2 id="intervenants">Intervenants</h2>
                 <ul>
@@ -419,10 +418,8 @@
                 </ul>
                 <div class="clearfix"></div>
             </section>
-        </div>
-        <footer class="three-cols "> 
             <div>
-                <h5 id="contact">Nous contacter</h5>
+                <h2 id="contact">Nous contacter</h2>
                 <ul>
                     <li>
                         Suivez <a href="https://twitter.com/jssophia">@JSSophia</a> sur Twitter
@@ -436,12 +433,12 @@
                 </ul>
             </div>
             <div>
-                <h5>L'équipe</h5>
+                <h2>L'équipe</h2>
                 JSSophia est organisé par <a href="http://twitter.com/FredGuillaume">Frédéric Guillaume</a> et <a href="http://twitter.com/_dhar">Olivier Audard</a>.
                 <!-- Ajoute ton nom ici  -->
             </div>
             <div>
-                <h5>Soutien</h5>
+                <h2>Soutien</h2>
                 Nos réunions sont hébergées et sponsorisées par <a href="http://www.avisto.com/">Avisto</a>.
             </div>
         </footer>
