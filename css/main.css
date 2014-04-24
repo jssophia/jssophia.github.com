@@ -144,6 +144,16 @@ nav {
 				text-decoration:none;
 			}
 
+		nav li.iframe:hover {
+			background: transparent;
+		}
+
+		nav li.iframe iframe {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 20px;
+		}
+
 
 .logo {
 	display: block;
@@ -216,6 +226,16 @@ article {
 ; */
 	color: #000;
 	border-top: 1px dashed #DDD;
+}
+
+article iframe, article .mu-widget {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+.mu-widget a img {
+	height: 28px;
 }
 
 span.date {

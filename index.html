@@ -64,6 +64,7 @@
                 <li><a href="#sessions">Prochaines sessions</a></li>
                 <li><a href="#intervenants">Intervenants</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="iframe"><a href="https://twitter.com/JSSophia" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @JSSophia</a></li>
             </ul>
         </nav>
         <header role="banner">
@@ -125,8 +126,8 @@
             <section id="sessions">
                 <h2>Sessions</h2>
                 <!-- TALKS -->
-                <article>
-                    <h3>JSSophia #7</h3>
+                <article data-hashtag="#JSSophia7" data-meetup="172108192">
+                    <h3>JSSophia #7<span class="date">Jeudi 12 Septembre 2013</span></h3>
                     <ul>
                         <li>
                             <h4>CujoJS</h4>
@@ -443,8 +444,16 @@
             </div>
         </footer>
         
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Twitter -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <!-- Meetup -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://secure.meetup.com/script/21021123101537681383/api/mu.btns.js?id=5h1bt1h85oolt13bu8teutcrou";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
                  
         <!-- <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
