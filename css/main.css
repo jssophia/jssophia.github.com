@@ -67,10 +67,12 @@ nav {
     top: 0;
     width: 100%;
 
-    background: black;
+    background: #00284F;
     color: white;
 
     font-size: 14px;
+
+    box-shadow: 0 0 10px #333;
 }
     nav ul {
         margin: 0;
@@ -89,26 +91,44 @@ nav {
             padding: 10px 15px;
             text-decoration: none;
         }
+        nav li:hover {
+            background:#0071A4;
+        }
+
+#logo-nav {
+    float: left;
+    margin: 0 8px;
+}
 
 /* header */
 header {
+    padding: 1em;
     margin-top: 40px;
 }
     header .logo {
         float: left;
-        margin: 10px;
+        margin-right: 1em;
+        width: 200px;
 
     }
-    header .about {
+        header .logo img {
+            width: 100%;
+        }
+    header h1, header p {
         margin-left: 220px;
     }
 
+
 /* Global styles */
-.content h2 {
+.content, footer {
+    padding: 1em;
+}
+
+/*.content h2 {
     text-align: center;
     border-bottom: 1px solid grey;
     margin: auto 20px;
-}
+}*/
 
 /* Speakers list */
 .speakers > ul > li {
@@ -121,9 +141,70 @@ header {
     .speakers li img {
         width: 150px;
         float: left;
+        margin-right: 5px;
     }
 
+.speaker-infos ul {
+    list-style: none;
+}
 
+article {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    /*border: 1px solid #1E7FCB;
+    border-left: 6px solid #1E7FCB;
+
+    */
+    border-radius: 2px;
+    box-shadow: 0 0 1em #666
+}
+
+article > h3 {
+    display: block;
+    margin: 0;
+    padding-left: 12px;
+    color: #03224C;
+}
+
+article > ul {
+    display: block;
+    margin: 0;
+}
+
+article h4 {
+    margin: 0.5em 0 0 0 ;
+}
+article h5 {
+    margin: 0;
+}
+article p {
+    margin: 0;
+}
+
+article a {
+    color: #1E7FCB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article h5 a {
+    margin-right: 1em;
+    padding-left: 0.5em;
+    border-left: 0.5em solid #1E7FCB
+}
+
+article a:hover {
+    color: #03224C;
+}
+
+h2 {
+    padding-left: 5px;
+    color: #FFF;
+    border-left: 6px solid #03224C;
+    background: #1E7FCB;
+    line-height: 50px;
+    border-radius: 2px;
+}
 
 
 
