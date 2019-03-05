@@ -32,7 +32,7 @@
 			$nextSession = $sessions.find('article').first();
 
 		addTweetButton($nextSession);
-		addMeetupButton($nextSession);
+		// addMeetupButton($nextSession);
 	});
 
 
