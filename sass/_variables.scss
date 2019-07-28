@@ -1,0 +1,12 @@
+// Breakpoints
+// Small devices (landscape phones, 576px and up)
+$devices-min-width-sm: 576px !default;
+// Medium devices (tablets, 768px and up)
+$devices-min-width-md: 768px !default;
+// Large devices (desktops, 992px and up)
+$devices-min-width-lg: 992px !default;
+// Extra large devices (large desktops, 1200px and up)
+$devices-min-width-xl: 1350px !default;
+
+$color-blue: #00284f;
+$website-background: linear-gradient(#{$color-blue}, black);
