@@ -210,6 +210,7 @@ $color-hover-light-blue: #0071a4;
     &__navigationToggler:not(:checked) ~ .menu__navigationBarWrapper,
     &__navigationToggler:checked ~ .menu__navigationBarWrapper {
       height: initial;
+      background-color: initial;
     }
 
     &__navigationBar {

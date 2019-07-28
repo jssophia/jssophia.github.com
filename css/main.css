@@ -283,7 +283,8 @@ footer {
     .menu__navigationTogglerLabelWrapper {
       display: none; }
     .menu__navigationToggler:not(:checked) ~ .menu__navigationBarWrapper, .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
-      height: initial; }
+      height: initial;
+      background-color: initial; }
     .menu__navigationBar {
       display: flex;
       width: 100%;
