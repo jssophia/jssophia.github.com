@@ -1,0 +1,11 @@
+/* To override the browser default styling */
+@import './reset.scss';
+/* Css values used accross the site such as the colors values, the brakpoints, ... */
+@import './variables';
+@import './mixins';
+/* The styling common to all pages such as the font-size, the titles, the links, the navigation bar, the footer */
+@import './global.scss';
+/* The different pages specific styling */
+@import './homepage.scss';
+/* The original print styling */
+@import './print.scss';
