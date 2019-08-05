@@ -219,6 +219,7 @@ footer {
   margin: 0;
   height: 4.5rem;
   background: #00284f;
+  box-shadow: 0 2px 10px 2px black;
   width: 100vw;
   margin: 0 -13%; }
   .menu__wrapper {
@@ -233,7 +234,13 @@ footer {
   .menu__navigationBarItem, .menu__logo {
     padding: 1rem; }
   .menu__navigationBarItem {
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
+    .menu__navigationBarItem:not(:last-child) {
+      border-bottom: 1px solid white; }
+      @media (min-width: 768px) {
+        .menu__navigationBarItem:not(:last-child) {
+          border-bottom: none; } }
     .menu__navigationBarItem:hover {
       background-color: #0071a4; }
   .menu__navigationBarLink {

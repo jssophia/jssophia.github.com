@@ -109,6 +109,7 @@ $color-hover-light-blue: #0071a4;
   margin: 0;
   height: $menu-height;
   background: $color-blue;
+  box-shadow: 0 2px 10px 2px black;
   @include fullscreen;
 
   &__wrapper {
@@ -131,6 +132,15 @@ $color-hover-light-blue: #0071a4;
 
   &__navigationBarItem {
     cursor: pointer;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid white;
+      @media (min-width: $devices-min-width-md) {
+        border-bottom: none;
+      }
+    }
+
     &:hover {
       background-color: $color-hover-light-blue;
     }
