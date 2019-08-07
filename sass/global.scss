@@ -23,6 +23,7 @@ body {
   width: 80%;
   margin: 0 auto;
   color: #fff;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -90,9 +91,42 @@ h5 {
   font-size: 1.2em;
 }
 
-footer {
+.main {
+  margin-bottom: 1em;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background-color: $color-blue;
   padding: 1em;
-  margin-bottom: 5em;
+  @include fullscreen();
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    flex: 1;
+  }
+  &__itemList {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+  }
+  &__twitterLogo {
+    width: 24px;
+  }
+  &__link {
+    color: white;
+    font-weight: $font-weight-regular;
+    text-decoration: underline;
+    margin-left: $space-sm;
+  }
 }
 
 /* ==========================================================================
