@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html {
-  color: #222;
+  color: $color-black;
   font-size: 16px;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%; //Prevent iOS text size adjust after orientation change, without disabling user zoom.
@@ -19,10 +19,9 @@ body {
   line-height: 1.4;
   font-family: 'Raleway', 'sans-serif';
   margin: 0 auto;
-  background: $website-background;
+  background: $color-white-smoke;
   width: 80%;
   margin: 0 auto;
-  color: #fff;
   overflow-x: hidden;
 }
 
@@ -56,7 +55,7 @@ textarea {
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: $color-black;
   padding: 0.2em 0;
 }
 
@@ -71,6 +70,9 @@ a:hover {
 
 h1 {
   font-size: 4em;
+  font-family: 'Permanent Marker', cursive;
+  color: $color-blue;
+  padding: 1.5rem 0;
 }
 
 h2 {
@@ -118,8 +120,9 @@ h5 {
   &__item {
     display: flex;
   }
-  &__twitterLogo {
+  &__logo {
     width: 24px;
+    color: $color-white;
   }
   &__link {
     color: white;
@@ -143,7 +146,6 @@ $color-hover-light-blue: #0071a4;
   margin: 0;
   height: $menu-height;
   background: $color-blue;
-  box-shadow: 0 2px 10px 2px black;
   @include fullscreen;
 
   &__wrapper {
@@ -263,72 +265,6 @@ $color-hover-light-blue: #0071a4;
       justify-content: flex-end;
     }
   }
-}
-
-/* Sessions */
-
-#sessions {
-  margin-top: 2em;
-  background: #fff;
-  border-radius: 0.5em;
-  padding: 1em;
-}
-#sessions h2 {
-  color: #ddd;
-  font-size: 4em;
-  margin: 0;
-}
-
-article {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  color: #000;
-  border-top: 1px dashed #ddd;
-}
-
-article iframe,
-article .mu-widget {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1em;
-}
-
-.mu-widget a img {
-  height: 28px;
-}
-
-span.date {
-  float: right;
-  color: #ccc;
-  vertical-align: bottom;
-}
-
-article > h3 {
-  color: #03224c;
-}
-
-article > ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-article h4 {
-  margin: 0.5em 0 0 0;
-}
-
-article p {
-  margin: 0;
-}
-
-article h5 a {
-  margin-right: 1em;
-  padding-left: 0.5em;
-  border-left: 0.5em solid #1e7fcb;
-}
-
-li {
-  list-style-type: none;
 }
 
 /* Speakers list */

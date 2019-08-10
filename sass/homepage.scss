@@ -1,0 +1,66 @@
+/* Sessions */
+
+#sessions {
+  margin-top: 2em;
+  background: $color-white;
+  border-radius: 0.5em;
+  padding: 1em;
+  border: $border-thin solid $color-light-grey;
+}
+#sessions h2 {
+  color: $color-medium-grey;
+  font-size: 4em;
+  margin: 0;
+}
+
+article {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: $color-black;
+  border-top: 1px dashed #ddd;
+}
+
+article iframe,
+article .mu-widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.mu-widget a img {
+  height: 28px;
+}
+
+span.date {
+  float: right;
+  color: $color-medium-grey;
+  vertical-align: bottom;
+}
+
+article > h3 {
+  color: $color-blue;
+}
+
+article > ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+article h4 {
+  margin: 0.5em 0 0 0;
+}
+
+article p {
+  margin: 0;
+}
+
+article h5 a {
+  margin-right: 1em;
+  padding-left: 0.5em;
+  border-left: 0.5em solid $color-blue-cyan;
+}
+
+li {
+  list-style-type: none;
+}

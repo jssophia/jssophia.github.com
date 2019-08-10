@@ -148,10 +148,9 @@ body {
   line-height: 1.4;
   font-family: 'Raleway', 'sans-serif';
   margin: 0 auto;
-  background: linear-gradient(#00284f, black);
+  background: #f7f7f7;
   width: 80%;
   margin: 0 auto;
-  color: #fff;
   overflow-x: hidden; }
 
 ::-moz-selection {
@@ -179,7 +178,7 @@ textarea {
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #222;
   padding: 0.2em 0; }
 
 a {
@@ -191,7 +190,10 @@ a:hover {
   text-decoration: underline; }
 
 h1 {
-  font-size: 4em; }
+  font-size: 4em;
+  font-family: 'Permanent Marker', cursive;
+  color: #03224c;
+  padding: 1.5rem 0; }
 
 h2 {
   font-size: 3em; }
@@ -214,7 +216,7 @@ h5 {
    Footer
    ========================================================================== */
 .footer {
-  background-color: #00284f;
+  background-color: #03224c;
   padding: 1em;
   width: 100vw;
   margin: 0 -13%; }
@@ -231,8 +233,9 @@ h5 {
     justify-content: space-between; }
   .footer__item {
     display: flex; }
-  .footer__twitterLogo {
-    width: 24px; }
+  .footer__logo {
+    width: 24px;
+    color: #fff; }
   .footer__link {
     color: white;
     font-weight: 400;
@@ -247,8 +250,7 @@ h5 {
   top: 0;
   margin: 0;
   height: 4.5rem;
-  background: #00284f;
-  box-shadow: 0 2px 10px 2px black;
+  background: #03224c;
   width: 100vw;
   margin: 0 -13%; }
   .menu__wrapper {
@@ -326,60 +328,6 @@ h5 {
       width: 100%;
       justify-content: flex-end; } }
 
-/* Sessions */
-#sessions {
-  margin-top: 2em;
-  background: #fff;
-  border-radius: 0.5em;
-  padding: 1em; }
-
-#sessions h2 {
-  color: #ddd;
-  font-size: 4em;
-  margin: 0; }
-
-article {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  color: #000;
-  border-top: 1px dashed #ddd; }
-
-article iframe,
-article .mu-widget {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1em; }
-
-.mu-widget a img {
-  height: 28px; }
-
-span.date {
-  float: right;
-  color: #ccc;
-  vertical-align: bottom; }
-
-article > h3 {
-  color: #03224c; }
-
-article > ul {
-  display: block;
-  margin: 0;
-  padding: 0; }
-
-article h4 {
-  margin: 0.5em 0 0 0; }
-
-article p {
-  margin: 0; }
-
-article h5 a {
-  margin-right: 1em;
-  padding-left: 0.5em;
-  border-left: 0.5em solid #1e7fcb; }
-
-li {
-  list-style-type: none; }
-
 /* Speakers list */
 .speakers > ul > li {
   list-style-type: none;
@@ -454,6 +402,61 @@ li {
   *zoom: 1; }
 
 /* The different pages specific styling */
+/* Sessions */
+#sessions {
+  margin-top: 2em;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 1em;
+  border: 1px solid #cecece; }
+
+#sessions h2 {
+  color: #aaa5a5;
+  font-size: 4em;
+  margin: 0; }
+
+article {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: #222;
+  border-top: 1px dashed #ddd; }
+
+article iframe,
+article .mu-widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em; }
+
+.mu-widget a img {
+  height: 28px; }
+
+span.date {
+  float: right;
+  color: #aaa5a5;
+  vertical-align: bottom; }
+
+article > h3 {
+  color: #03224c; }
+
+article > ul {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+article h4 {
+  margin: 0.5em 0 0 0; }
+
+article p {
+  margin: 0; }
+
+article h5 a {
+  margin-right: 1em;
+  padding-left: 0.5em;
+  border-left: 0.5em solid #1e7fcb; }
+
+li {
+  list-style-type: none; }
+
 /* The original print styling */
 /* ==========================================================================
       Print styles
