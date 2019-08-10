@@ -403,11 +403,16 @@ h5 {
   color: #222;
   border-top: 1px dashed #ddd; }
   .talks__date {
-    float: right;
     color: #aaa5a5;
     vertical-align: bottom; }
   .talks__session {
-    color: #03224c; }
+    color: #03224c;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .talks__session {
+        flex-direction: row;
+        justify-content: space-between; } }
   .talks__title {
     display: block;
     margin: 0.5em 0 0 0;
@@ -445,6 +450,8 @@ h5 {
       width: 30%; } }
 .speakers__name {
   font-size: 1.5rem; }
+.speakers__infos {
+  margin-left: 1rem; }
 
 .speakers li img {
   width: 100px;

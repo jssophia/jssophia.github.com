@@ -22,13 +22,19 @@
   border-top: 1px dashed #ddd;
 
   &__date {
-    float: right;
     color: $color-medium-grey;
     vertical-align: bottom;
   }
 
   &__session {
     color: $color-blue;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $devices-min-width-md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__title {
@@ -82,6 +88,10 @@
 
   &__name {
     font-size: $font-size-md;
+  }
+
+  &__infos {
+    margin-left: $space-lg;
   }
 }
 
