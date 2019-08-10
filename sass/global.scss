@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  font-size: 1em;
   line-height: 1.4;
   font-family: 'Raleway', 'sans-serif';
   margin: 0 auto;
@@ -60,7 +59,7 @@ textarea {
 }
 
 a {
-  color: #1e7fcb;
+  color: $color-blue-cyan;
   font-weight: bold;
   text-decoration: none;
 }
@@ -69,28 +68,28 @@ a:hover {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: $font-size-xxl;
   font-family: 'Permanent Marker', cursive;
   color: $color-blue;
   padding: 1.5rem 0;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: $font-size-xl;
 }
 
 h3 {
   margin: 0;
-  font-size: 3em;
+  font-size: $font-size-lg;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: $font-size-md;
 }
 
 h5 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: $font-size-sm;
 }
 
 .main {
@@ -265,27 +264,6 @@ $color-hover-light-blue: #0071a4;
       justify-content: flex-end;
     }
   }
-}
-
-/* Speakers list */
-.speakers > ul > li {
-  list-style-type: none;
-  display: inline-block;
-  width: 32%;
-  vertical-align: top;
-}
-.speakers li img {
-  width: 100px;
-  float: left;
-  margin-right: 5px;
-}
-
-.speaker-infos ul {
-  list-style: none;
-}
-
-.speakers h3 {
-  font-size: 1.2em;
 }
 
 /* ==========================================================================

@@ -1,27 +1,57 @@
 /* Sessions */
 
-#sessions {
-  margin-top: 2em;
+.sessions,
+.speakers {
+  margin: 2rem 0;
   background: $color-white;
   border-radius: 0.5em;
-  padding: 1em;
+  padding: 1em 1em 2em 1em;
   border: $border-thin solid $color-light-grey;
-}
-#sessions h2 {
-  color: $color-medium-grey;
-  font-size: 4em;
-  margin: 0;
+
+  &__title {
+    color: $color-medium-grey;
+    font-size: 4em;
+    margin: 0;
+  }
 }
 
-article {
+.talks {
   margin-bottom: 1em;
   padding: 0.5em;
   color: $color-black;
   border-top: 1px dashed #ddd;
+
+  &__date {
+    float: right;
+    color: $color-medium-grey;
+    vertical-align: bottom;
+  }
+
+  &__session {
+    color: $color-blue;
+  }
+
+  &__title {
+    display: block;
+    margin: 0.5em 0 0 0;
+    font-size: $font-size-md;
+  }
+
+  &__speaker {
+    display: block;
+    margin: 0;
+    font-size: $font-size-sm;
+
+    a {
+      margin-right: 1em;
+      padding-left: 0.5em;
+      border-left: 0.5em solid $color-blue-cyan;
+    }
+  }
 }
 
-article iframe,
-article .mu-widget {
+.talks iframe,
+.talks .mu-widget {
   display: inline-block;
   vertical-align: middle;
   margin-right: 1em;
@@ -31,36 +61,32 @@ article .mu-widget {
   height: 28px;
 }
 
-span.date {
-  float: right;
-  color: $color-medium-grey;
-  vertical-align: bottom;
-}
-
-article > h3 {
-  color: $color-blue;
-}
-
-article > ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-article h4 {
-  margin: 0.5em 0 0 0;
-}
-
-article p {
+.talks p {
   margin: 0;
 }
 
-article h5 a {
-  margin-right: 1em;
-  padding-left: 0.5em;
-  border-left: 0.5em solid $color-blue-cyan;
+.speakers {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    margin-top: $space-lg;
+    display: flex;
+    @media (min-width: $devices-min-width-md) {
+      width: 30%;
+    }
+  }
+
+  &__name {
+    font-size: $font-size-md;
+  }
 }
 
-li {
-  list-style-type: none;
+.speakers li img {
+  width: 100px;
+  float: left;
+  margin-right: 5px;
 }
