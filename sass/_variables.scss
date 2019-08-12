@@ -1,12 +1,31 @@
 // Breakpoints
 // Small devices (landscape phones, 576px and up)
-$devices-min-width-sm: 576px !default;
+$devices-min-width-sm: 576px;
 // Medium devices (tablets, 768px and up)
-$devices-min-width-md: 768px !default;
+$devices-min-width-md: 768px;
 // Large devices (desktops, 992px and up)
-$devices-min-width-lg: 992px !default;
+$devices-min-width-lg: 992px;
 // Extra large devices (large desktops, 1200px and up)
-$devices-min-width-xl: 1350px !default;
+$devices-min-width-xl: 1350px;
 
-$color-blue: #00284f;
-$website-background: linear-gradient(#{$color-blue}, black);
+$color-blue: #03224c;
+$color-blue-cyan: #1e7fcb;
+$color-white-smoke: rgb(247, 247, 247);
+$color-dark-lava: rgb(56, 56, 56);
+$color-medium-grey: #aaa5a5;
+$color-light-grey: rgb(206, 206, 206);
+$color-black: #222;
+$color-white: #fff;
+
+$font-weight-regular: 400;
+
+$space-sm: 0.6rem;
+$space-lg: 1rem;
+
+$border-thin: 1px;
+
+$font-size-xxl: 4rem;
+$font-size-xl: 3rem;
+$font-size-lg: 2rem;
+$font-size-md: 1.5rem;
+$font-size-sm: 1.2rem;

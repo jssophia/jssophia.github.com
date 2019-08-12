@@ -144,14 +144,13 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 1em;
   line-height: 1.4;
   font-family: 'Raleway', 'sans-serif';
   margin: 0 auto;
-  background: linear-gradient(#00284f, black);
+  background: #f7f7f7;
   width: 80%;
   margin: 0 auto;
-  color: #fff; }
+  overflow-x: hidden; }
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -178,7 +177,7 @@ textarea {
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #222;
   padding: 0.2em 0; }
 
 a {
@@ -190,25 +189,57 @@ a:hover {
   text-decoration: underline; }
 
 h1 {
-  font-size: 4em; }
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #03224c;
+  padding: 1.5rem 0; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3rem; }
 
 h3 {
   margin: 0;
-  font-size: 3em; }
+  font-size: 2rem; }
 
 h4 {
-  font-size: 2em; }
+  font-size: 1.5rem; }
 
 h5 {
   margin: 0;
-  font-size: 1.2em; }
+  font-size: 1.2rem; }
 
-footer {
+.main {
+  margin-bottom: 1em; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background-color: #03224c;
   padding: 1em;
-  margin-bottom: 5em; }
+  width: 100vw;
+  margin: 0 -13%; }
+  .footer__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+  .footer__logo {
+    flex: 1; }
+  .footer__itemList {
+    display: flex;
+    flex: 2;
+    justify-content: space-between; }
+  .footer__item {
+    display: flex; }
+  .footer__logo {
+    width: 24px;
+    color: #fff; }
+  .footer__link {
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-left: 0.6rem; }
 
 /* ==========================================================================
    Navigation bar
@@ -218,7 +249,7 @@ footer {
   top: 0;
   margin: 0;
   height: 4.5rem;
-  background: #00284f;
+  background: #03224c;
   width: 100vw;
   margin: 0 -13%; }
   .menu__wrapper {
@@ -233,7 +264,13 @@ footer {
   .menu__navigationBarItem, .menu__logo {
     padding: 1rem; }
   .menu__navigationBarItem {
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
+    .menu__navigationBarItem:not(:last-child) {
+      border-bottom: 1px solid white; }
+      @media (min-width: 768px) {
+        .menu__navigationBarItem:not(:last-child) {
+          border-bottom: none; } }
     .menu__navigationBarItem:hover {
       background-color: #0071a4; }
   .menu__navigationBarLink {
@@ -289,78 +326,6 @@ footer {
       display: flex;
       width: 100%;
       justify-content: flex-end; } }
-
-/* Sessions */
-#sessions {
-  margin-top: 2em;
-  background: #fff;
-  border-radius: 0.5em;
-  padding: 1em; }
-
-#sessions h2 {
-  color: #ddd;
-  font-size: 4em;
-  margin: 0; }
-
-article {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  color: #000;
-  border-top: 1px dashed #ddd; }
-
-article iframe,
-article .mu-widget {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1em; }
-
-.mu-widget a img {
-  height: 28px; }
-
-span.date {
-  float: right;
-  color: #ccc;
-  vertical-align: bottom; }
-
-article > h3 {
-  color: #03224c; }
-
-article > ul {
-  display: block;
-  margin: 0;
-  padding: 0; }
-
-article h4 {
-  margin: 0.5em 0 0 0; }
-
-article p {
-  margin: 0; }
-
-article h5 a {
-  margin-right: 1em;
-  padding-left: 0.5em;
-  border-left: 0.5em solid #1e7fcb; }
-
-li {
-  list-style-type: none; }
-
-/* Speakers list */
-.speakers > ul > li {
-  list-style-type: none;
-  display: inline-block;
-  width: 32%;
-  vertical-align: top; }
-
-.speakers li img {
-  width: 100px;
-  float: left;
-  margin-right: 5px; }
-
-.speaker-infos ul {
-  list-style: none; }
-
-.speakers h3 {
-  font-size: 1.2em; }
 
 /* ==========================================================================
       Media Queries
@@ -418,6 +383,81 @@ li {
   *zoom: 1; }
 
 /* The different pages specific styling */
+/* Sessions */
+.sessions,
+.speakers {
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 0.5em;
+  padding: 1em 1em 2em 1em;
+  border: 1px solid #cecece; }
+  .sessions__title,
+  .speakers__title {
+    color: #aaa5a5;
+    font-size: 4em;
+    margin: 0; }
+
+.talks {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: #222;
+  border-top: 1px dashed #ddd; }
+  .talks__date {
+    color: #aaa5a5;
+    vertical-align: bottom; }
+  .talks__session {
+    color: #03224c;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .talks__session {
+        flex-direction: row;
+        justify-content: space-between; } }
+  .talks__title {
+    display: block;
+    margin: 0.5em 0 0 0;
+    font-size: 1.5rem; }
+  .talks__speaker {
+    display: block;
+    margin: 0;
+    font-size: 1.2rem; }
+    .talks__speaker a {
+      margin-right: 1em;
+      padding-left: 0.5em;
+      border-left: 0.5em solid #1e7fcb; }
+
+.talks iframe,
+.talks .mu-widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em; }
+
+.mu-widget a img {
+  height: 28px; }
+
+.talks p {
+  margin: 0; }
+
+.speakers__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+.speakers__item {
+  margin-top: 1rem;
+  display: flex; }
+  @media (min-width: 768px) {
+    .speakers__item {
+      width: 30%; } }
+.speakers__name {
+  font-size: 1.5rem; }
+.speakers__infos {
+  margin-left: 1rem; }
+
+.speakers li img {
+  width: 100px;
+  float: left;
+  margin-right: 5px; }
+
 /* The original print styling */
 /* ==========================================================================
       Print styles

@@ -1,0 +1,102 @@
+/* Sessions */
+
+.sessions,
+.speakers {
+  margin: 2rem 0;
+  background: $color-white;
+  border-radius: 0.5em;
+  padding: 1em 1em 2em 1em;
+  border: $border-thin solid $color-light-grey;
+
+  &__title {
+    color: $color-medium-grey;
+    font-size: 4em;
+    margin: 0;
+  }
+}
+
+.talks {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  color: $color-black;
+  border-top: 1px dashed #ddd;
+
+  &__date {
+    color: $color-medium-grey;
+    vertical-align: bottom;
+  }
+
+  &__session {
+    color: $color-blue;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $devices-min-width-md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0.5em 0 0 0;
+    font-size: $font-size-md;
+  }
+
+  &__speaker {
+    display: block;
+    margin: 0;
+    font-size: $font-size-sm;
+
+    a {
+      margin-right: 1em;
+      padding-left: 0.5em;
+      border-left: 0.5em solid $color-blue-cyan;
+    }
+  }
+}
+
+.talks iframe,
+.talks .mu-widget {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.mu-widget a img {
+  height: 28px;
+}
+
+.talks p {
+  margin: 0;
+}
+
+.speakers {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    margin-top: $space-lg;
+    display: flex;
+    @media (min-width: $devices-min-width-md) {
+      width: 30%;
+    }
+  }
+
+  &__name {
+    font-size: $font-size-md;
+  }
+
+  &__infos {
+    margin-left: $space-lg;
+  }
+}
+
+.speakers li img {
+  width: 100px;
+  float: left;
+  margin-right: 5px;
+}

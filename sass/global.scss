@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html {
-  color: #222;
+  color: $color-black;
   font-size: 16px;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%; //Prevent iOS text size adjust after orientation change, without disabling user zoom.
@@ -15,14 +15,13 @@ html {
 }
 
 body {
-  font-size: 1em;
   line-height: 1.4;
   font-family: 'Raleway', 'sans-serif';
   margin: 0 auto;
-  background: $website-background;
+  background: $color-white-smoke;
   width: 80%;
   margin: 0 auto;
-  color: #fff;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -55,12 +54,12 @@ textarea {
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: $color-black;
   padding: 0.2em 0;
 }
 
 a {
-  color: #1e7fcb;
+  color: $color-blue-cyan;
   font-weight: bold;
   text-decoration: none;
 }
@@ -69,30 +68,67 @@ a:hover {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: $font-size-xxl;
+  font-family: 'Permanent Marker', cursive;
+  color: $color-blue;
+  padding: 1.5rem 0;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: $font-size-xl;
 }
 
 h3 {
   margin: 0;
-  font-size: 3em;
+  font-size: $font-size-lg;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: $font-size-md;
 }
 
 h5 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: $font-size-sm;
 }
 
-footer {
+.main {
+  margin-bottom: 1em;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background-color: $color-blue;
   padding: 1em;
-  margin-bottom: 5em;
+  @include fullscreen();
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    flex: 1;
+  }
+  &__itemList {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+  }
+  &__logo {
+    width: 24px;
+    color: $color-white;
+  }
+  &__link {
+    color: white;
+    font-weight: $font-weight-regular;
+    text-decoration: underline;
+    margin-left: $space-sm;
+  }
 }
 
 /* ==========================================================================
@@ -131,6 +167,15 @@ $color-hover-light-blue: #0071a4;
 
   &__navigationBarItem {
     cursor: pointer;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid white;
+      @media (min-width: $devices-min-width-md) {
+        border-bottom: none;
+      }
+    }
+
     &:hover {
       background-color: $color-hover-light-blue;
     }
@@ -219,93 +264,6 @@ $color-hover-light-blue: #0071a4;
       justify-content: flex-end;
     }
   }
-}
-
-/* Sessions */
-
-#sessions {
-  margin-top: 2em;
-  background: #fff;
-  border-radius: 0.5em;
-  padding: 1em;
-}
-#sessions h2 {
-  color: #ddd;
-  font-size: 4em;
-  margin: 0;
-}
-
-article {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  color: #000;
-  border-top: 1px dashed #ddd;
-}
-
-article iframe,
-article .mu-widget {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1em;
-}
-
-.mu-widget a img {
-  height: 28px;
-}
-
-span.date {
-  float: right;
-  color: #ccc;
-  vertical-align: bottom;
-}
-
-article > h3 {
-  color: #03224c;
-}
-
-article > ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-article h4 {
-  margin: 0.5em 0 0 0;
-}
-
-article p {
-  margin: 0;
-}
-
-article h5 a {
-  margin-right: 1em;
-  padding-left: 0.5em;
-  border-left: 0.5em solid #1e7fcb;
-}
-
-li {
-  list-style-type: none;
-}
-
-/* Speakers list */
-.speakers > ul > li {
-  list-style-type: none;
-  display: inline-block;
-  width: 32%;
-  vertical-align: top;
-}
-.speakers li img {
-  width: 100px;
-  float: left;
-  margin-right: 5px;
-}
-
-.speaker-infos ul {
-  list-style: none;
-}
-
-.speakers h3 {
-  font-size: 1.2em;
 }
 
 /* ==========================================================================
