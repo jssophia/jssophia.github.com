@@ -241,7 +241,12 @@ h5 {
   .footer__itemList {
     display: flex;
     flex: 2;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: baseline; }
+    @media (min-width: 768px) {
+      .footer__itemList {
+        flex-direction: row; } }
   .footer__item {
     display: flex; }
   .footer__logo {
