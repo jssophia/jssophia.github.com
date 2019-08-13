@@ -2,7 +2,7 @@
 
 .sessions,
 .speakers {
-  margin: 2rem 0;
+  margin: 1rem 0;
   background: $color-white;
   border-radius: 0.5em;
   padding: 1em 1em 2em 1em;
@@ -39,7 +39,10 @@
   &__title {
     display: block;
     margin: 0.5em 0 0 0;
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
+    @media (min-width: $devices-min-width-md) {
+      font-size: $font-size-md;
+    }
   }
 
   &__speaker {
@@ -86,7 +89,10 @@
   }
 
   &__name {
-    font-size: $font-size-md;
+    font-size: $font-size-sm;
+    @media (min-width: $devices-min-width-md) {
+      font-size: $font-size-md;
+    }
   }
 
   &__infos {
