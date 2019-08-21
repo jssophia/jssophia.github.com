@@ -22,6 +22,14 @@ body {
   width: 80%;
   margin: 0 auto;
   overflow-x: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  flex: 1;
 }
 
 ::-moz-selection {
