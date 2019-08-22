@@ -1,0 +1,7 @@
+{
+  "name": "jssophia.github.com",
+  "description": "Javascript meetup at Sophia-Antipolis",
+  "scripts": {
+    "build": "node-sass --include-path sass sass/main.scss css/main.css"
+  }
+}
