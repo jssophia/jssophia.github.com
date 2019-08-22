@@ -28,9 +28,14 @@
   <body>
     <div class="menu">
       <div class="menu__wrapper">
-        <div class="menu__logo">
-          <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+        <div >
+          <a class="menu__logoLink" href="index.html">
+            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
+          </a>
         </div>
+        <h1 class="menu__title">
+          JS Sophia
+        </h1>
 
         <input
           type="checkbox"
@@ -51,7 +56,7 @@
         <nav class="menu__navigationBarWrapper">
           <ul class="menu__navigationBar">
             <li class="active menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="index.html">JSSophia</a>
+              <a class="menu__navigationBarLink" href="index.html">Home</a>
             </li>
             <li class="menu__navigationBarItem">
               <a class="menu__navigationBarLink" href="archives.html">
@@ -68,26 +73,15 @@
                 L'équipe
               </a>
             </li>
-            <li class="iframe menu__navigationBarItem">
-              <a
-                href="https://twitter.com/JSSophia"
-                class="twitter-follow-button"
-                data-show-count="false"
-                data-lang="fr"
-                data-size="large"
-              >
-                Suivre @JSSophia
-              </a>
-            </li>
           </ul>
         </nav>
       </div>
     </div>
 
     <header>
-      <h1 id="jssophia">
-        JS Sophia-Antipolis
-      </h1>
+      <h2>
+        Meetup Javascript sur Sophia-Antipolis (06)
+      </h2>
       <div class="about">
         <p>
           Aficionado Javascript de la première heure, utilisateur régulier ou
@@ -242,10 +236,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Jean-Michael Legait</h3>
               <ul>
@@ -261,10 +257,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
+            <div>
+              <img
               src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
               alt=""
-            />
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Marius Mézerette</h3>
               <ul>
