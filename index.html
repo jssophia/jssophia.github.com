@@ -27,33 +27,12 @@
 
   <body>
     <div class="menu">
-      <div class="menu__wrapper">
-        <div >
-          <a class="menu__logoLink" href="index.html">
-            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
-          </a>
-        </div>
-        <h1 class="menu__title">
-          JS Sophia
-        </h1>
-
-        <input
-          type="checkbox"
-          id="menuNavigationToggler"
-          class="menu__navigationToggler"
-        />
-        <div class="menu__navigationTogglerLabelWrapper">
-          <label
-            class="menu__navigationTogglerLabel"
-            for="menuNavigationToggler"
-          >
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-          </label>
-        </div>
-
-        <nav class="menu__navigationBarWrapper">
+      <input
+        type="checkbox"
+        id="menuNavigationToggler"
+        class="menu__navigationToggler"
+      />
+      <nav class="menu__navigationBarWrapper">
           <ul class="menu__navigationBar">
             <li class="active menu__navigationBarItem">
               <a class="menu__navigationBarLink" href="index.html">Home</a>
@@ -75,6 +54,26 @@
             </li>
           </ul>
         </nav>
+      <div class="menu__wrapper">
+        <div >
+          <a class="menu__logoLink" href="index.html">
+            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
+          </a>
+        </div>
+        <h1 class="menu__title">
+          JS Sophia
+        </h1>
+        <div class="menu__navigationTogglerLabelWrapper">
+          <label
+            class="menu__navigationTogglerLabel"
+            for="menuNavigationToggler"
+          >
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+          </label>
+        </div>
+
       </div>
     </div>
 
@@ -336,7 +335,9 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+          <a class="menu__logoLink" href="index.html">
+            <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+          </a>
         </div>
         <ul class="footer__itemList">
           <li class="footer__item">
@@ -358,21 +359,6 @@
       <script src="js/vendor/jquery-1.11.0.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
-
-      <!-- Twitter -->
-      <script>
-        !(function(d, s, id) {
-          var js,
-            fjs = d.getElementsByTagName(s)[0],
-            p = /^http:/.test(d.location) ? 'http' : 'https';
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + '://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        })(document, 'script', 'twitter-wjs');
-      </script>
     </footer>
   </body>
 </html>

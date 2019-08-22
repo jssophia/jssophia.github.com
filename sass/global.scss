@@ -156,6 +156,7 @@ $menu-padding: 1rem;
 $menu-height: 4.5rem; // 72px
 $logo-size-small: 3rem;
 $logo-size-large: 6rem;
+$logo-margin: 1rem;
 $color-hover-light-blue: #001b66;
 
 .menu {
@@ -167,8 +168,18 @@ $color-hover-light-blue: #001b66;
 
   &__title {
     display: inline-block;
+    font-size: $font-size-lg;
+    padding: 1rem;
     color: $color-white-smoke;
     white-space: nowrap;
+    flex: 1;
+    text-align: center;
+    margin-right: $logo-size-small + $logo-margin;
+    @media (min-width: $devices-min-width-md) {
+      padding: 0;
+      font-size: $font-size-xxl;
+      margin-right: $logo-size-large + $logo-margin;
+    }
   }
 
   &__wrapper {
@@ -177,6 +188,9 @@ $color-hover-light-blue: #001b66;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    @media (min-width: $devices-min-width-md) {
+      padding: 1rem 0;
+    }
   }
 
   &__navigationBar {
@@ -190,7 +204,7 @@ $color-hover-light-blue: #001b66;
   }
 
   &__logo {
-    margin: 1rem;
+    margin-right: $logo-margin;
     width: $logo-size-small;
     height: $logo-size-small;
     transition: all .5s ease-out;
@@ -200,7 +214,7 @@ $color-hover-light-blue: #001b66;
     }
   }
 
-  &__logoKink {
+  &__logoLink {
     display: block;
   }
 
@@ -281,7 +295,9 @@ $color-hover-light-blue: #001b66;
 
   @media (min-width: $devices-min-width-md) {
     &__navigationBarWrapper {
-      position: initial;
+      width: auto;
+      top: 0;
+      right: 1rem;
       height: initial;
       transition: none;
       overflow-y: auto;
