@@ -81,13 +81,17 @@
 
     <main>
       <h1>L'équipe</h1>
-      <ul>
-        <li>
-          <img
-            src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
-            alt=""
-          />
-          <div class="speaker-infos">
+      <div class="team">
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
+              alt=""
+            />
+          </div>
+
+          <div>
             <h3>Frédéric Guillaume</h3>
             <ul>
               <li>
@@ -102,14 +106,16 @@
               </li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </li>
-        <li>
-          <img
-            src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-            alt=""
-          />
-          <div class="speaker-infos">
+        </div>
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+              alt=""
+            />
+          </div>
+          <div>
             <h3>Jean-Michael Legait</h3>
             <ul>
               <li>
@@ -122,34 +128,17 @@
               </li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </li>
-        <li>
-          <img
-            src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
-            alt=""
-          />
-          <div class="speaker-infos">
-            <h3>Marius Mézerette</h3>
-            <ul>
-              <li>
-                Twitter:
-                <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a>
-              </li>
-              <li>
-                Github:
-                <a href="https://github.com/MariusMez">MariusMez</a>
-              </li>
-            </ul>
+        </div>
+
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
+              alt=""
+            />
           </div>
-          <div class="clearfix"></div>
-        </li>
-        <li>
-          <img
-            src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
-            alt=""
-          />
-          <div class="speaker-infos">
+          <div>
             <h3>Maxime Sénécal</h3>
             <ul>
               <li>
@@ -160,14 +149,16 @@
               </li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </li>
-        <li>
-          <img
-            src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
-            alt=""
-          />
-          <div class="speaker-infos">
+        </div>
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
             <h3>Olivier Audard</h3>
             <ul>
               <li>
@@ -180,14 +171,16 @@
               </li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </li>
-        <li>
-          <img
-            src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
-            alt=""
-          />
-          <div class="speaker-infos">
+        </div>
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
+              alt=""
+            />
+          </div>
+          <div>
             <h3>Romain Drevet</h3>
             <ul>
               <li>
@@ -198,10 +191,26 @@
               </li>
             </ul>
           </div>
-          <div class="clearfix"></div>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
+        </div>
+        <div class="team__member">
+          <div class="team__photoWrapper">
+            <img
+              class="team__photo"
+              src="https://avatars1.githubusercontent.com/u/26767866?s=460&v=4"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>Kanto Andriambelo</h3>
+            <ul>
+              <li>
+                Github:
+                <a href="https://github.com/Kaandriambelo">Kaandriambelo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
@@ -210,9 +219,9 @@
         </div>
         <ul class="footer__itemList">
           <li class="footer__item">
-            <i class="material-icons footer__logo">
-              email
-            </i>
+            <span class="footer__logo">
+              &#9993;
+            </span>
             <a class="footer__link" href="mailto:contact@jssophia.io">
               contact@jssophia.io
             </a>

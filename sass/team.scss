@@ -1,0 +1,34 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $devices-min-width-md) {
+    flex-direction: row;
+  }
+
+  &__member {
+    margin-bottom: $space-lg;
+    border: solid $border-thin $color-light-grey;
+    border-radius: $border-radius-md;
+    padding: $space-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-white;
+    flex: 1;
+
+    &:not(:last-child) {
+      margin-right: $space-lg;
+    }
+  }
+
+  &__photoWrapper {
+    height: 100px;
+    width: 100px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
