@@ -3,5 +3,8 @@
   "description": "Javascript meetup at Sophia-Antipolis",
   "scripts": {
     "build": "node-sass --include-path sass sass/main.scss css/main.css"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
   }
 }
