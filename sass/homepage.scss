@@ -1,3 +1,9 @@
+.home {
+  &__title{
+    margin-top: 1rem;
+  }
+}
+
 /* Sessions */
 
 .sessions,
@@ -26,7 +32,7 @@
   }
 
   &__session {
-    color: $color-blue;
+    color: $color-blue-dark;
     display: flex;
     flex-direction: column;
 
