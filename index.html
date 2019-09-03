@@ -23,31 +23,15 @@
 
   <body>
     <div class="menu">
-      <div class="menu__wrapper">
-        <div class="menu__logo">
-          <img src="img/JSSophia.svg" alt="" width="40" height="40" />
-        </div>
-
-        <input
-          type="checkbox"
-          id="menuNavigationToggler"
-          class="menu__navigationToggler"
-        />
-        <div class="menu__navigationTogglerLabelWrapper">
-          <label
-            class="menu__navigationTogglerLabel"
-            for="menuNavigationToggler"
-          >
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-          </label>
-        </div>
-
-        <nav class="menu__navigationBarWrapper">
+      <input
+        type="checkbox"
+        id="menuNavigationToggler"
+        class="menu__navigationToggler"
+      />
+      <nav class="menu__navigationBarWrapper">
           <ul class="menu__navigationBar">
             <li class="active menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="index.html">JSSophia</a>
+              <a class="menu__navigationBarLink" href="index.html">Home</a>
             </li>
             <li class="menu__navigationBarItem">
               <a class="menu__navigationBarLink" href="archives.html">
@@ -64,26 +48,35 @@
                 L'équipe
               </a>
             </li>
-            <li class="iframe menu__navigationBarItem">
-              <a
-                href="https://twitter.com/JSSophia"
-                class="twitter-follow-button"
-                data-show-count="false"
-                data-lang="fr"
-                data-size="large"
-              >
-                Suivre @JSSophia
-              </a>
-            </li>
           </ul>
         </nav>
+      <div class="menu__wrapper">
+        <div >
+          <a class="menu__logoLink" href="index.html">
+            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
+          </a>
+        </div>
+        <h1 class="menu__title">
+          JS Sophia
+        </h1>
+        <div class="menu__navigationTogglerLabelWrapper">
+          <label
+            class="menu__navigationTogglerLabel"
+            for="menuNavigationToggler"
+          >
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+          </label>
+        </div>
+
       </div>
     </div>
 
     <header>
-      <h1 id="jssophia">
-        JS Sophia-Antipolis
-      </h1>
+      <h2>
+        Meetup Javascript sur Sophia-Antipolis (06)
+      </h2>
       <div class="about">
         <p>
           Aficionado Javascript de la première heure, utilisateur régulier ou
@@ -217,10 +210,12 @@
         <h2 class="speakers__title">Intervenants</h2>
         <ul class="speakers__list">
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Frédéric Guillaume</h3>
               <ul>
@@ -238,10 +233,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Jean-Michael Legait</h3>
               <ul>
@@ -257,10 +254,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
+            <div>
+              <img
               src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
               alt=""
-            />
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Marius Mézerette</h3>
               <ul>
@@ -276,10 +275,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Maxime Sénécal</h3>
               <ul>
@@ -293,10 +294,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Olivier Audard</h3>
               <ul>
@@ -312,10 +315,12 @@
             </div>
           </li>
           <li class="speakers__item">
-            <img
-              src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
+                alt=""
+              />
+            </div>
             <div class="speakers__infos">
               <h3 class="speakers__name">Romain Drevet</h3>
               <ul>
@@ -334,7 +339,9 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+          <a class="menu__logoLink" href="index.html">
+            <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+          </a>
         </div>
         <ul class="footer__itemList">
           <li class="footer__item">
@@ -356,21 +363,6 @@
       <script src="js/vendor/jquery-1.11.0.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
-
-      <!-- Twitter -->
-      <script>
-        !(function(d, s, id) {
-          var js,
-            fjs = d.getElementsByTagName(s)[0],
-            p = /^http:/.test(d.location) ? 'http' : 'https';
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + '://platform.twitter.com/widgets.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        })(document, 'script', 'twitter-wjs');
-      </script>
     </footer>
   </body>
 </html>

@@ -198,7 +198,7 @@ a:hover {
 h1 {
   font-size: 3rem;
   font-family: 'Permanent Marker', cursive;
-  color: #03224c;
+  color: #0036cc;
   padding: 1.5rem 0; }
   @media (min-width: 768px) {
     h1 {
@@ -234,7 +234,7 @@ h5 {
    Footer
    ========================================================================== */
 .footer {
-  background-color: #03224c;
+  background-color: #0036cc;
   padding: 1em;
   width: 100vw;
   margin: 0 -13%; }
@@ -272,21 +272,49 @@ h5 {
   position: sticky;
   top: 0;
   margin: 0;
-  height: 4.5rem;
-  background: #03224c;
+  background: #0036cc;
   width: 100vw;
   margin: 0 -13%; }
+  .menu__title {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #f7f7f7;
+    white-space: nowrap;
+    flex: 1;
+    text-align: center;
+    margin-right: 4rem; }
+    @media (min-width: 768px) {
+      .menu__title {
+        padding: 0;
+        font-size: 4rem;
+        margin-right: 7rem; } }
   .menu__wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .menu__wrapper {
+        padding: 1rem 0; } }
   .menu__navigationBar {
     margin-block-start: 0;
     margin-block-end: 0;
     height: 100%; }
-  .menu__navigationBarItem, .menu__logo {
+  .menu__navigationBarItem {
     padding: 1rem; }
+  .menu__logo {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    transition: all .5s ease-out; }
+    @media (min-width: 768px) {
+      .menu__logo {
+        width: 6rem;
+        height: 6rem; } }
+  .menu__logoLink {
+    display: block; }
   .menu__navigationBarItem {
     cursor: pointer;
     text-align: center; }
@@ -296,7 +324,7 @@ h5 {
         .menu__navigationBarItem:not(:last-child) {
           border-bottom: none; } }
     .menu__navigationBarItem:hover {
-      background-color: #0071a4; }
+      background-color: #001b66; }
   .menu__navigationBarLink {
     color: white; }
     .menu__navigationBarLink:hover {
@@ -332,18 +360,22 @@ h5 {
   .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
     height: calc(100vh - 4.5rem);
     overflow-y: auto; }
-  .menu__navigationToggler:checked ~ .menu__navigationTogglerLabelWrapper, .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
-    background-color: #0071a4;
+  .menu__navigationToggler:checked ~ .menu__navigationTogglerLabelWrapper,
+  .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
+    background-color: #001b66;
     color: white; }
   @media (min-width: 768px) {
     .menu__navigationBarWrapper {
-      position: initial;
+      width: auto;
+      top: 0;
+      right: 1rem;
       height: initial;
       transition: none;
       overflow-y: auto; }
     .menu__navigationTogglerLabelWrapper {
       display: none; }
-    .menu__navigationToggler:not(:checked) ~ .menu__navigationBarWrapper, .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
+    .menu__navigationToggler:not(:checked) ~ .menu__navigationBarWrapper,
+    .menu__navigationToggler:checked ~ .menu__navigationBarWrapper {
       height: initial;
       background-color: initial; }
     .menu__navigationBar {
@@ -429,7 +461,7 @@ h5 {
     color: #aaa5a5;
     vertical-align: bottom; }
   .talks__session {
-    color: #03224c;
+    color: #0036cc;
     display: flex;
     flex-direction: column; }
     @media (min-width: 768px) {
@@ -468,17 +500,20 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start; }
+
 .speakers__item {
   margin-top: 1rem;
   display: flex; }
   @media (min-width: 768px) {
     .speakers__item {
       width: 30%; } }
+
 .speakers__name {
   font-size: 1.2rem; }
   @media (min-width: 768px) {
     .speakers__name {
       font-size: 1.5rem; } }
+
 .speakers__infos {
   margin-left: 1rem; }
 
@@ -524,17 +559,13 @@ h5 {
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-
   a,
   a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   /*
             * Don't show links for images, or javascript/internal links
             */
@@ -542,23 +573,18 @@ h5 {
   a[href^='javascript:']:after,
   a[href^='#']:after {
     content: ''; }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-
   tr,
   img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   @page {
     margin: 0.5cm; }
   p,
@@ -566,10 +592,7 @@ h5 {
   h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid;
     color: white; } }
-
-/*# sourceMappingURL=main.css.map */
