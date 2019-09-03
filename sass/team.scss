@@ -1,12 +1,22 @@
 .team {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $devices-min-width-md) {
-    flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: $space-lg;
+  @media (min-width: $devices-min-width-sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $devices-min-width-lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $devices-min-width-xl) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   &__member {
-    margin-bottom: $space-lg;
     border: solid $border-thin $color-light-grey;
     border-radius: $border-radius-md;
     padding: $space-lg;
@@ -14,10 +24,14 @@
     flex-direction: column;
     align-items: center;
     background-color: $color-white;
-    flex: 1;
+  }
 
-    &:not(:last-child) {
-      margin-right: $space-lg;
+  &__memberName {
+    font-size: 1.2rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    @media (min-width: $devices-min-width-md) {
+      font-size: 1.5rem;
     }
   }
 
