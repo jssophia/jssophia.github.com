@@ -243,27 +243,35 @@ h5 {
     margin: 0 auto;
     display: flex;
     align-items: center; }
-  .footer__logo {
-    flex: 1; }
   .footer__itemList {
     display: flex;
     flex: 2;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: baseline; }
+    flex-direction: column; }
     @media (min-width: 768px) {
       .footer__itemList {
         flex-direction: row; } }
   .footer__item {
-    display: flex; }
+    display: flex;
+    flex: 1;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .footer__item {
+        justify-content: flex-end; }
+        .footer__item:not(:last-child) {
+          justify-content: center; } }
   .footer__logo {
-    width: 24px;
-    color: #fff; }
+    flex: 1; }
+  .footer__icon {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 24px; }
   .footer__link {
     color: white;
     font-weight: 400;
-    text-decoration: underline;
-    margin-left: 0.6rem; }
+    text-decoration: none; }
 
 /* ==========================================================================
    Navigation bar
@@ -314,7 +322,8 @@ h5 {
         width: 6rem;
         height: 6rem; } }
   .menu__logoLink {
-    display: block; }
+    display: block;
+    text-align: left; }
   .menu__navigationBarItem {
     cursor: pointer;
     text-align: center; }

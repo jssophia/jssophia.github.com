@@ -128,31 +128,40 @@ h5 {
     display: flex;
     align-items: center;
   }
-  &__logo {
-    flex: 1;
-  }
   &__itemList {
     display: flex;
     flex: 2;
     justify-content: space-between;
     flex-direction: column;
-    align-items: baseline;
     @media (min-width: $devices-min-width-md) {
       flex-direction: row;
     }
   }
   &__item {
     display: flex;
+    flex: 1;
+    align-items: center;
+    @media (min-width: $devices-min-width-md) {
+      justify-content: flex-end;;
+      &:not(:last-child) {
+        justify-content: center;
+      }
+    }
   }
   &__logo {
-    width: 24px;
+    flex: 1;
+  }
+  &__icon {
+    text-align: center;
     color: $color-white;
+    text-align: center;
+    font-size: $font-size-md;
+    width: 24px;
   }
   &__link {
     color: white;
     font-weight: $font-weight-regular;
-    text-decoration: underline;
-    margin-left: $space-sm;
+    text-decoration: none;
   }
 }
 
@@ -224,6 +233,7 @@ $color-hover-light-blue: #001b66;
 
   &__logoLink {
     display: block;
+    text-align: left;
   }
 
   &__navigationBarItem {
