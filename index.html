@@ -74,7 +74,7 @@
     </div>
 
     <header>
-      <h2>
+      <h2 class="home__title">
         Meetup Javascript sur Sophia-Antipolis (06)
       </h2>
       <div class="about">
@@ -91,249 +91,241 @@
     </header>
 
     <main class="main">
-      <div>
-        <section id="sessions" class="sessions">
-          <h2 class="sessions__title">Sessions</h2>
-          <!-- TALKS -->
-          <article class="talks">
-            <h3 class="talks__session">
-              JSSophia #4
-              <span class="talks__date">27 Juin 2019</span>
-            </h3>
-            <ul class="unstyled">
-              <li>
-                <span class="talks__title">Voyagez avec TensorflowJS</span>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/MeZPhotos">Marius Mézerette</a>
-                </span>
+      <section id="sessions" class="sessions">
+        <h2 class="sessions__title">Sessions</h2>
+        <!-- TALKS -->
+        <article class="talks">
+          <h3 class="talks__session">
+            JSSophia #4
+            <span class="talks__date">27 Juin 2019</span>
+          </h3>
+          <ul>
+            <li class="talk">
+              <div class="talk__title">
+                Voyagez avec TensorflowJS
+              </div>
+              <div class="talk__info">
+                <div class="speaker__avatarWrapper">
+                    <img
+                    class="speaker__avatar"
+                    src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="speaker__name">Marius Mézerette</div>
+                  <ul>
+                    <li>
+                      Twitter:
+                      <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a>
+                    </li>
+                    <li>
+                      Github:
+                      <a href="https://github.com/MariusMez">MariusMez</a>
+                    </li>
+                  </ul>
+                  <div class="talk__slide">
+                      <a
+                        href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
+                        Slides
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="talk">
+              <div class="talk__title">
+                Connectez votre webapp React à une source de vérité Redux
+              </div>
+              <div class="talk__info">
+                <div class="speaker__avatarWrapper">
+                    <img
+                    class="speaker__avatar"
+                    src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="speaker__name">Maxime Sénécal</div>
+                  <ul>
+                    <li>
+                      Twitter:
+                      <a href="https://twitter.com/maxime_senecal">
+                        @maxime_senecal
+                      </a>
+                    </li>
+                  </ul>
+                  <!--<div class="talk__slide">
+                      <a
+                        href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
+                        Slides
+                      </a>
+                  </div>-->
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="talks">
+          <h3 class="talks__session">
+            JSSophia #3
+            <span class="talks__date">25 Avril 2019</span>
+          </h3>
+          <ul>
+            <li class="talk">
+              <div class="talk__title">
+                JavaScript Code Splitting
+              </div>
+              <div class="talk__info">
+                <div class="speaker__avatarWrapper">
+                    <img
+                    class="speaker__avatar"
+                    src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="speaker__name">Olivier Audard</div>
+                  <ul>
+                    <li>
+                      Twitter:
+                      <a href="https://twitter.com/_dhar">@_dhar</a>
+                    </li>
+                    <li>
+                      Github:
+                      <a href="https://github.com/dharFr">dharFr</a>
+                    </li>
+                  </ul>
+                  <div class="talk__slide">
+                      <a
+                        href="https://speakerdeck.com/oad/javascript-code-splitting">
+                        Slides
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="talk">
+              <div class="talk__title">
+                Reprenez le contrôle de votre code avec TypeScript
+              </div>
+              <div class="talk__info">
+                <div class="speaker__avatarWrapper">
+                    <img
+                    class="speaker__avatar"
+                    src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="speaker__name">Romain Drevet</div>
+                  <ul>
+                    <li>
+                      Twitter:
+                      <a href="https://twitter.com/Romain_Drevet">
+                        @Romain_Drevet
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="talk__slide">
+                      <a
+                        href="https://t.co/KDTQw3xdZ6">
+                        Slides
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article class="talks">
+          <h3 class="talks__session">
+            JSSophia #2
+            <span class="talks__date">14 Mars 2019</span>
+          </h3>
+          <ul>
+            <li class="talk">
+              <div class="talk__title">
+                Boostez le chargement de vos images !
+              </div>
+              <div class="talk__info">
+                <div class="speaker__avatarWrapper">
+                    <img
+                    class="speaker__avatar"
+                    src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div class="speaker__name">Jean-Michael Legait</div>
+                  <ul>
+                    <li>
+                      Twitter:
+                      <a href="https://twitter.com/jmlegait">@jmlegait</a>
+                    </li>
+                    <li>
+                      Github:
+                      <a href="https://github.com/Jean-Michael">Jean-Michael</a>
+                    </li>
+                  </ul>
+                  <div class="talk__slide">
+                      <a
+                        href="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia">
+                        Slides
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="talk">
+                <div class="talk__title">
+                    JS asynchrone, du cauchemar à la quiétude
+                </div>
+                <div class="talk__info">
+                  <div class="speaker__avatarWrapper">
+                      <img
+                      class="speaker__avatar"
+                      src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="speaker__name">Frédéric Guillaume</div>
+                    <ul>
+                      <li>
+                        Twitter:
+                        <a href="https://twitter.com/fredguillaume">
+                          @fredguillaume
+                        </a>
+                      </li>
+                      <li>
+                        Github:
+                        <a href="https://github.com/Fred-el-Jolo">Fred-el-Jolo</a>
+                      </li>
+                    </ul>
+                    <div class="talk__slide">
+                        <a
+                          href="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html">
+                          Slides
+                        </a>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li>
-                <h4>
-                  Connectez votre webapp React à une source de vérité Redux
-                </h4>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/maxime_senecal">
-                    Maxime Sénécal
-                  </a>
-                </span>
-              </li>
-            </ul>
-          </article>
-          <article class="talks">
-            <h3 class="talks__session">
-              JSSophia #3
-              <span class="talks__date">25 Avril 2019</span>
-            </h3>
-            <ul class="unstyled">
-              <li>
-                <span class="talks__title">JavaScript Code Splitting</span>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/_dhar">Olivier Audard</a>
-                </span>
-                <span class="talks__speaker">
-                  <a
-                    href="https://speakerdeck.com/oad/javascript-code-splitting"
-                  >
-                    Slides
-                  </a>
-                </span>
-              </li>
-              <li>
-                <span class="talks__title">
-                  Reprenez le contrôle de votre code avec TypeScript
-                </span>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/Romain_Drevet">Romain Drevet</a>
-                </span>
-                <span class="talks__speaker">
-                  <a href="https://t.co/KDTQw3xdZ6">Slides</a>
-                </span>
-              </li>
-            </ul>
-          </article>
-          <article class="talks">
-            <h3 class="talks__session">
-              JSSophia #2
-              <span class="talks__date">14 Mars 2019</span>
-            </h3>
-            <ul class="unstyled">
-              <li>
-                <span class="talks__title">
-                  Boostez le chargement de vos images !
-                </span>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/jmlegait">Jean-Michael Legait</a>
-                </span>
-                <span class="talks__speaker">
-                  <a
-                    href="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia"
-                  >
-                    Slides
-                  </a>
-                </span>
-              </li>
-              <li>
-                <span class="talks__title">
-                  JS asynchrone, du cauchemar à la quiétude
-                </span>
-                <span class="talks__speaker">
-                  <a href="https://twitter.com/FredGuillaume">
-                    Frédéric Guillaume
-                  </a>
-                </span>
-                <span class="talks__speaker">
-                  <a
-                    href="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html"
-                  >
-                    Slides
-                  </a>
-                </span>
-              </li>
-            </ul>
-          </article>
-          <article class="talks">
-            <h3 class="talks__session">
-              JSSophia #1
-              <span class="talks__date">26 Septembre 2018</span>
-            </h3>
-            <ul class="unstyled">
-              <li>
-                Kick-off de lancement à 19h chez Sogeti. Suivi d'un verre au
-                Maître Kanter.
-              </li>
-            </ul>
-          </article>
-        </section>
-      </div>
-
-      <section class="speakers">
-        <h2 class="speakers__title">Intervenants</h2>
-        <ul class="speakers__list">
-          <li class="speakers__item">
-            <div>
-              <img
-                src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Frédéric Guillaume</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/fredguillaume">
-                    @fredguillaume
-                  </a>
-                </li>
-                <li>
-                  Github:
-                  <a href="https://github.com/Fred-el-Jolo">Fred-el-Jolo</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="speakers__item">
-            <div>
-              <img
-                src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-                alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Jean-Michael Legait</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/jmlegait">@jmlegait</a>
-                </li>
-                <li>
-                  Github:
-                  <a href="https://github.com/Jean-Michael">Jean-Michael</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="speakers__item">
-            <div>
-              <img
-              src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
-              alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Marius Mézerette</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a>
-                </li>
-                <li>
-                  Github:
-                  <a href="https://github.com/MariusMez">MariusMez</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="speakers__item">
-            <div>
-              <img
-                src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
-                alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Maxime Sénécal</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/maxime_senecal">
-                    @maxime_senecal
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="speakers__item">
-            <div>
-              <img
-                src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Olivier Audard</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/_dhar">@_dhar</a>
-                </li>
-                <li>
-                  Github:
-                  <a href="https://github.com/dharFr">dharFr</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="speakers__item">
-            <div>
-              <img
-                src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
-                alt=""
-              />
-            </div>
-            <div class="speakers__infos">
-              <h3 class="speakers__name">Romain Drevet</h3>
-              <ul>
-                <li>
-                  Twitter:
-                  <a href="https://twitter.com/Romain_Drevet">
-                    @Romain_Drevet
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+          </ul>
+        </article>
+        <article class="talks">
+          <h3 class="talks__session">
+            JSSophia #1
+            <span class="talks__date">26 Septembre 2018</span>
+          </h3>
+          <ul class="unstyled">
+            <li>
+              Kick-off de lancement à 19h chez Sogeti. Suivi d'un verre au
+              Maître Kanter.
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
     <footer class="footer">
