@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/components/speaker.js"></script>
   </head>
 
   <body>
@@ -105,35 +104,13 @@
               <div class="talk__title">
                 Voyagez avec TensorflowJS
               </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
-                    alt=""
-                  />
-                </div>
-                <talk-speaker name="Marius Mézerette" twitter="" github=""></talk-speaker>
-                <div>
-                  <div class="speaker__name">Marius Mézerette</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a>
-                    </li>
-                    <li>
-                      Github:
-                      <a href="https://github.com/MariusMez">MariusMez</a>
-                    </li>
-                  </ul>
-                  <div class="talk__slide">
-                      <a
-                        href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
-                        Slides
-                      </a>
-                  </div>
-                </div>
+              <div class="talk__slide">
+                  <a
+                    href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
+                    Slides
+                  </a>
               </div>
+              <talk-speaker class="talk__info" name="Marius Mézerette" twitter="MeZPhotos" github="MariusMez" avatar="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"></talk-speaker>
             </li>
             <li class="talk">
               <div class="talk__title">
@@ -357,6 +334,7 @@
       <script src="js/vendor/jquery-1.11.0.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/components/speaker.js"></script>
     </footer>
   </body>
 </html>
