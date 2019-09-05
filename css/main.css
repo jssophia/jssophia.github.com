@@ -448,6 +448,29 @@ h5 {
 .clearfix {
   *zoom: 1; }
 
+/* Web Components styles */
+.speaker__avatarWrapper {
+  height: 100px;
+  width: 100px;
+  margin-right: 1rem; }
+
+.speaker__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+
+.speaker__name {
+  font-weight: bold; }
+
+.talk__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1e7fcb; }
+
+.talk__info {
+  display: flex;
+  margin: 0.6rem 0; }
+
 /* The different pages specific styling */
 .home__title {
   margin-top: 1rem; }
@@ -464,6 +487,11 @@ h5 {
   .speakers__title {
     color: #aaa5a5;
     margin: 0; }
+
+.session__talk {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; }
 
 .talks {
   margin-bottom: 1em;
@@ -534,31 +562,6 @@ h5 {
   width: 100px;
   float: left;
   margin-right: 5px; }
-
-.talk {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem; }
-  .talk__title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #1e7fcb; }
-  .talk__info {
-    display: flex;
-    margin: 0.6rem 0; }
-
-.speaker__avatarWrapper {
-  height: 100px;
-  width: 100px;
-  margin-right: 1rem; }
-
-.speaker__avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; }
-
-.speaker__name {
-  font-weight: bold; }
 
 .team {
   display: grid;

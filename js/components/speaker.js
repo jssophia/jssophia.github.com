@@ -1,15 +1,28 @@
 class Speaker extends HTMLElement {
+  constructor() {
+    super();
+    this.name = this.getAttribute("name");
+    this.twitter = this.getAttribute("twitter");
+    this.github = this.getAttribute("github");
+    this.avatar = this.getAttribute("avatar");
+  }
 
-    constructor() {
-        super();
-        this.name = this.getAttribute('name');
-        this.twitter = this.getAttribute('twitter');
-        this.github = this.getAttribute('github');
-        this.avatar = this.getAttribute('avatar');
+  getTwitterTag() {
+    if (this.twitter) {
+      return `<li>Twitter: <a href="https://twitter.com/${this.twitter}">@${this.twitter}</a></li>`;
     }
+    return "";
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  getGithubTag() {
+    if (this.github) {
+      return `<li>Github: <a href="https://github.com/${this.github}">${this.github}</a></li>`;
+    }
+    return "";
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
         <div class="speaker__avatarWrapper">
             <img
             class="speaker__avatar"
@@ -19,17 +32,11 @@ class Speaker extends HTMLElement {
         <div>
             <div class="speaker__name">${this.name}</div>
             <ul>
-            <li>
-                Twitter:
-                <a href="https://twitter.com/${this.twitter}">@${this.twitter}</a>
-            </li>
-            <li>
-                Github:
-                <a href="https://github.com/${this.github}">${this.github}</a>
-            </li>
+            ${this.getTwitterTag()}
+            ${this.getGithubTag()}
             </ul>
         </div>`;
-    }
+  }
 }
 
-customElements.define('talk-speaker', Speaker);
+customElements.define("jssophia-speaker", Speaker);

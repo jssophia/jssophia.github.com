@@ -1,5 +1,5 @@
 .home {
-  &__title{
+  &__title {
     margin-top: 1rem;
   }
 }
@@ -17,6 +17,14 @@
   &__title {
     color: $color-medium-grey;
     margin: 0;
+  }
+}
+
+.session {
+  &__talk {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
   }
 }
 

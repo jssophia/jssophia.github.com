@@ -1,0 +1,12 @@
+.talk {
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-md;
+    color: $color-blue-cyan;
+  }
+
+  &__info {
+    display: flex;
+    margin: $space-sm 0;
+  }
+}

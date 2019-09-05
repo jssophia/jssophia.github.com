@@ -1,0 +1,17 @@
+.speaker {
+  &__avatarWrapper {
+    height: 100px;
+    width: 100px;
+    margin-right: $space-lg;
+  }
+
+  &__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}
