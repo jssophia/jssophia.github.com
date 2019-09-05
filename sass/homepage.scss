@@ -1,6 +1,12 @@
 .home {
-  &__title{
+  &__title {
     margin-top: 1rem;
+  }
+}
+
+.about {
+  &__meetup {
+    margin-top: $space-lg;
   }
 }
 

@@ -452,6 +452,9 @@ h5 {
 .home__title {
   margin-top: 1rem; }
 
+.about__meetup {
+  margin-top: 1rem; }
+
 /* Sessions */
 .sessions,
 .speakers {
@@ -545,20 +548,36 @@ h5 {
     color: #1e7fcb; }
   .talk__info {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0.6rem 0; }
+    @media (min-width: 576px) {
+      .talk__info {
+        flex-direction: row;
+        align-items: flex-start; } }
 
-.speaker__avatarWrapper {
-  height: 100px;
-  width: 100px;
-  margin-right: 1rem; }
-
-.speaker__avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; }
-
-.speaker__name {
-  font-weight: bold; }
+.speaker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center; }
+  @media (min-width: 576px) {
+    .speaker {
+      margin-right: 3rem;
+      flex-direction: row;
+      align-items: flex-start; } }
+  .speaker__avatarWrapper {
+    height: 100px;
+    min-height: 100px;
+    width: 100px;
+    min-width: 100px;
+    margin-right: 1rem; }
+  .speaker__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .speaker__name {
+    font-weight: bold; }
 
 .team {
   display: grid;

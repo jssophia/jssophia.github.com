@@ -1,35 +1,52 @@
 .talk {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-md;
+    color: $color-blue-cyan;
+  }
+
+  &__info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-
-    &__title {
-        font-weight: bold;
-        font-size: $font-size-md;
-        color: $color-blue-cyan;
+    align-items: center;
+    margin: $space-sm 0;
+    @media (min-width: $devices-min-width-sm) {
+      flex-direction: row;
+      align-items: flex-start;
     }
-
-    &__info{
-        display: flex;
-        margin: $space-sm 0;
-    }
+  }
 }
 
-.speaker{
+.speaker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+  @media (min-width: $devices-min-width-sm) {
+    margin-right: 3rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    &__avatarWrapper {
-        height: 100px;
-        width: 100px;
-        margin-right: $space-lg;
-    }
-    
-    &__avatar {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    }
+  &__avatarWrapper {
+    height: 100px;
+    min-height: 100px;
+    width: 100px;
+    min-width: 100px;
+    margin-right: $space-lg;
+  }
 
-    &__name {
-        font-weight: bold;
-    }
+  &__avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
 }
