@@ -4,6 +4,12 @@
   }
 }
 
+.about {
+  &__meetup {
+    margin-top: $space-lg;
+  }
+}
+
 /* Sessions */
 
 .sessions,
