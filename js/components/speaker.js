@@ -23,6 +23,7 @@ class Speaker extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
+      <div class="speaker">
         <div class="speaker__avatarWrapper">
             <img
             class="speaker__avatar"
@@ -35,7 +36,8 @@ class Speaker extends HTMLElement {
             ${this.getTwitterTag()}
             ${this.getGithubTag()}
             </ul>
-        </div>`;
+        </div>
+      </div>`;
   }
 }
 
