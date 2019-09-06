@@ -1,0 +1,22 @@
+.talk {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  &__title {
+    font-weight: bold;
+    font-size: $font-size-md;
+    color: $color-blue-cyan;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $space-sm 0;
+    @media (min-width: $devices-min-width-sm) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+}

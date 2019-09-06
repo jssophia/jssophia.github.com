@@ -26,6 +26,14 @@
   }
 }
 
+.session {
+  &__talk {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
 .talks {
   margin-bottom: 1em;
   padding: 0.5em;

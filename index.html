@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- load webcomponents bundle, which includes all the necessary polyfills -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
 
@@ -29,33 +31,33 @@
         class="menu__navigationToggler"
       />
       <nav class="menu__navigationBarWrapper">
-          <ul class="menu__navigationBar">
-            <li class="active menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="index.html">Home</a>
-            </li>
-            <!--
-            <li class="menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="archives.html">
-                Archives
-              </a>
-            </li>
-            -->
-            <li class="menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="coc.html">
-                Code of conduct
-              </a>
-            </li>
-            <li class="menu__navigationBarItem">
-              <a class="menu__navigationBarLink" href="contact.html">
-                L'équipe
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="menu__navigationBar">
+          <li class="active menu__navigationBarItem">
+            <a class="menu__navigationBarLink" href="index.html">Home</a>
+          </li>
+          <!--
+          <li class="menu__navigationBarItem">
+            <a class="menu__navigationBarLink" href="archives.html">
+              Archives
+            </a>
+          </li>
+          -->
+          <li class="menu__navigationBarItem">
+            <a class="menu__navigationBarLink" href="coc.html">
+              Code of conduct
+            </a>
+          </li>
+          <li class="menu__navigationBarItem">
+            <a class="menu__navigationBarLink" href="contact.html">
+              L'équipe
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div class="menu__wrapper">
-        <div >
+        <div>
           <a class="menu__logoLink" href="index.html">
-            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
+            <img class="menu__logo" src="img/JSSophia.svg" alt="" />
           </a>
         </div>
         <h1 class="menu__title">
@@ -71,7 +73,6 @@
             <span class="menu__navigationTogglerLine"></span>
           </label>
         </div>
-
       </div>
     </div>
 
@@ -106,77 +107,32 @@
           </h3>
           <ul>
             <li class="talk">
-              <div class="talk__title">
-                WebAssembly : est-ce que ça va remplacer JS ?
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="img/avatars/Maxime-Briziarelli.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Maxime Briziarelli</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/maxbriziarelli">@maxbriziarelli</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <jssophia-talk
+                title="WebAssembly : est-ce que ça va remplacer JS ?"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Maxime Briziarelli"
+                twitter="maxbriziarelli"
+                avatar="img/avatars/Maxime-Briziarelli.jpeg"
+              ></jssophia-speaker>
             </li>
             <li class="talk">
-              <div class="talk__title">
-                  Storybook pour votre design system, un conte de fées ?
-              </div>
+              <jssophia-talk
+                title="Storybook pour votre design system, un conte de fées ?"
+              ></jssophia-talk>
               <div class="talk__info">
-                <div class="speaker">
-                  <div class="speaker__avatarWrapper">
-                      <img
-                      class="speaker__avatar"
-                      src="https://pbs.twimg.com/profile_images/2266221019/zcwasey7rqdkgghy42bk_200x200.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="speaker__name">Fleur Ettwiller</div>
-                    <ul>
-                      <li>
-                        Twitter:
-                        <a href="https://twitter.com/fleurettwiller">
-                          @fleurettwiller
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="speaker">
-                  <div class="speaker__avatarWrapper">
-                      <img
-                      class="speaker__avatar"
-                      src="https://pbs.twimg.com/profile_images/998304606160486400/rAB6aJxV_200x200.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="speaker__name">Michèle Legait</div>
-                    <ul>
-                      <li>
-                        Twitter:
-                        <a href="https://twitter.com/mlegait">
-                          @mlegait
-                        </a>
-                      </li>
-                      <li>
-                        Github:
-                        <a href="https://github.com/mlegait">mlegait</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <jssophia-speaker
+                  name="Fleur Ettwiller"
+                  twitter="fleurettwiller"
+                  avatar="https://pbs.twimg.com/profile_images/2266221019/zcwasey7rqdkgghy42bk_200x200.jpeg"
+                ></jssophia-speaker>
+                <jssophia-speaker
+                  name="Michèle Legait"
+                  twitter="mlegait"
+                  github="mlegait"
+                  avatar="https://pbs.twimg.com/profile_images/998304606160486400/rAB6aJxV_200x200.jpg"
+                ></jssophia-speaker>
               </div>
             </li>
           </ul>
@@ -187,69 +143,29 @@
             <span class="talks__date">27 Juin 2019</span>
           </h3>
           <ul>
-            <li class="talk">
-              <div class="talk__title">
-                Voyagez avec TensorflowJS
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Marius Mézerette</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a>
-                    </li>
-                    <li>
-                      Github:
-                      <a href="https://github.com/MariusMez">MariusMez</a>
-                    </li>
-                  </ul>
-                  <div class="talk__slide">
-                      <a
-                        href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
-                        Slides
-                      </a>
-                  </div>
-                </div>
-              </div>
+            <li class="session__talk">
+              <jssophia-talk
+                title="Voyagez avec TensorflowJS"
+                slides="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Marius Mézerette"
+                twitter="MeZPhotos"
+                github="MariusMez"
+                avatar="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
+              ></jssophia-speaker>
             </li>
-            <li class="talk">
-              <div class="talk__title">
-                Connectez votre webapp React à une source de vérité Redux
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Maxime Sénécal</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/maxime_senecal">
-                        @maxime_senecal
-                      </a>
-                    </li>
-                  </ul>
-                  <!--<div class="talk__slide">
-                      <a
-                        href="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js">
-                        Slides
-                      </a>
-                  </div>-->
-                </div>
-              </div>
+            <li class="session__talk">
+              <jssophia-talk
+                title="Connectez votre webapp React à une source de vérité Redux"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Maxime Sénécal"
+                twitter="maxime_senecal"
+                avatar="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
+              ></jssophia-speaker>
             </li>
           </ul>
         </article>
@@ -259,69 +175,30 @@
             <span class="talks__date">25 Avril 2019</span>
           </h3>
           <ul>
-            <li class="talk">
-              <div class="talk__title">
-                JavaScript Code Splitting
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Olivier Audard</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/_dhar">@_dhar</a>
-                    </li>
-                    <li>
-                      Github:
-                      <a href="https://github.com/dharFr">dharFr</a>
-                    </li>
-                  </ul>
-                  <div class="talk__slide">
-                      <a
-                        href="https://speakerdeck.com/oad/javascript-code-splitting">
-                        Slides
-                      </a>
-                  </div>
-                </div>
-              </div>
+            <li class="session__talk">
+              <jssophia-talk
+                title="JavaScript Code Splitting"
+                slides="https://speakerdeck.com/oad/javascript-code-splitting"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Olivier Audard"
+                twitter="_dhar"
+                github="dharFr"
+                avatar="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
+              ></jssophia-speaker>
             </li>
-            <li class="talk">
-              <div class="talk__title">
-                Reprenez le contrôle de votre code avec TypeScript
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Romain Drevet</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/Romain_Drevet">
-                        @Romain_Drevet
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="talk__slide">
-                      <a
-                        href="https://t.co/KDTQw3xdZ6">
-                        Slides
-                      </a>
-                  </div>
-                </div>
-              </div>
+            <li class="session__talk">
+              <jssophia-talk
+                title="Reprenez le contrôle de votre code avec TypeScript"
+                slides="https://t.co/KDTQw3xdZ6"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Romain Drevet"
+                twitter="Romain_Drevet"
+                avatar="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
+              ></jssophia-speaker>
             </li>
           </ul>
         </article>
@@ -331,74 +208,32 @@
             <span class="talks__date">14 Mars 2019</span>
           </h3>
           <ul>
-            <li class="talk">
-              <div class="talk__title">
-                Boostez le chargement de vos images !
-              </div>
-              <div class="talk__info">
-                <div class="speaker__avatarWrapper">
-                    <img
-                    class="speaker__avatar"
-                    src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <div class="speaker__name">Jean-Michael Legait</div>
-                  <ul>
-                    <li>
-                      Twitter:
-                      <a href="https://twitter.com/jmlegait">@jmlegait</a>
-                    </li>
-                    <li>
-                      Github:
-                      <a href="https://github.com/Jean-Michael">Jean-Michael</a>
-                    </li>
-                  </ul>
-                  <div class="talk__slide">
-                      <a
-                        href="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia">
-                        Slides
-                      </a>
-                  </div>
-                </div>
-              </div>
+            <li class="session__talk">
+              <jssophia-talk
+                title="Boostez le chargement de vos images !"
+                slides="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Jean-Michael Legait"
+                twitter="jmlegait"
+                github="Jean-Michael"
+                avatar="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+              ></jssophia-speaker>
             </li>
-            <li class="talk">
-                <div class="talk__title">
-                    JS asynchrone, du cauchemar à la quiétude
-                </div>
-                <div class="talk__info">
-                  <div class="speaker__avatarWrapper">
-                      <img
-                      class="speaker__avatar"
-                      src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="speaker__name">Frédéric Guillaume</div>
-                    <ul>
-                      <li>
-                        Twitter:
-                        <a href="https://twitter.com/fredguillaume">
-                          @fredguillaume
-                        </a>
-                      </li>
-                      <li>
-                        Github:
-                        <a href="https://github.com/Fred-el-Jolo">Fred-el-Jolo</a>
-                      </li>
-                    </ul>
-                    <div class="talk__slide">
-                        <a
-                          href="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html">
-                          Slides
-                        </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            <li class="session__talk">
+              <jssophia-talk
+                title="JS asynchrone, du cauchemar à la quiétude"
+                slides="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html"
+              ></jssophia-talk>
+              <jssophia-speaker
+                class="talk__info"
+                name="Frédéric Guillaume"
+                twitter="fredguillaume"
+                github="Fred-el-Jolo"
+                avatar="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
+              ></jssophia-speaker>
+            </li>
           </ul>
         </article>
         <article class="talks">
@@ -442,6 +277,8 @@
       <script src="js/vendor/jquery-1.11.0.min.js"></script>
       <script src="js/plugins.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/components/speaker.js"></script>
+      <script src="js/components/talk.js"></script>
     </footer>
   </body>
 </html>

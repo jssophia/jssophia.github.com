@@ -1,13 +1,15 @@
 /* To override the browser default styling */
-@import './reset.scss';
+@import "./reset.scss";
 /* Css values used accross the site such as the colors values, the brakpoints, ... */
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 /* The styling common to all pages such as the font-size, the titles, the links, the navigation bar, the footer */
-@import './global.scss';
+@import "./global.scss";
+/* Web Components styles */
+@import "./components/speaker.scss";
+@import "./components/talk.scss";
 /* The different pages specific styling */
-@import './homepage.scss';
-@import './talk.scss';
-@import './team.scss';
+@import "./homepage.scss";
+@import "./team.scss";
 /* The original print styling */
-@import './print.scss';
+@import "./print.scss";
