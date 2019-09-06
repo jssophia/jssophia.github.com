@@ -97,157 +97,161 @@
     </header>
 
     <main class="main">
-      <section id="sessions" class="sessions">
-        <h2 class="sessions__title">Sessions</h2>
-        <!-- TALKS -->
-        <article class="talks">
-          <h3 class="talks__session">
-            JSSophia #5
-            <span class="talks__date">26 Septembre 2019 - 18h30</span>
-          </h3>
-          <ul>
-            <li class="talk">
-              <jssophia-talk
-                title="WebAssembly : est-ce que ça va remplacer JS ?"
-              ></jssophia-talk>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #5</h2>
+          <h3>26 Septembre 2019 - 18h30</h3>
+        </div>
+        <div class="talks">
+          <article class="talk">
+            <jssophia-talk
+              title="WebAssembly : est-ce que ça va remplacer JS ?"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Maxime Briziarelli"
+              twitter="maxbriziarelli"
+              avatar="img/avatars/Maxime-Briziarelli.jpeg"
+            ></jssophia-speaker>
+          </article>
+          <article class="talk">
+            <jssophia-talk
+              title="Storybook pour votre design system, un conte de fées ?"
+            ></jssophia-talk>
+            <div class="talk__info">
               <jssophia-speaker
-                class="talk__info"
-                name="Maxime Briziarelli"
-                twitter="maxbriziarelli"
-                avatar="img/avatars/Maxime-Briziarelli.jpeg"
+                name="Fleur Ettwiller"
+                twitter="fleurettwiller"
+                avatar="https://pbs.twimg.com/profile_images/2266221019/zcwasey7rqdkgghy42bk_200x200.jpeg"
               ></jssophia-speaker>
-            </li>
-            <li class="talk">
-              <jssophia-talk
-                title="Storybook pour votre design system, un conte de fées ?"
-              ></jssophia-talk>
-              <div class="talk__info">
-                <jssophia-speaker
-                  name="Fleur Ettwiller"
-                  twitter="fleurettwiller"
-                  avatar="https://pbs.twimg.com/profile_images/2266221019/zcwasey7rqdkgghy42bk_200x200.jpeg"
-                ></jssophia-speaker>
-                <jssophia-speaker
-                  name="Michèle Legait"
-                  twitter="mlegait"
-                  github="mlegait"
-                  avatar="https://pbs.twimg.com/profile_images/998304606160486400/rAB6aJxV_200x200.jpg"
-                ></jssophia-speaker>
-              </div>
-            </li>
-          </ul>
-        </article>
-        <article class="talks">
-          <h3 class="talks__session">
-            JSSophia #4
-            <span class="talks__date">27 Juin 2019</span>
-          </h3>
-          <ul>
-            <li class="session__talk">
-              <jssophia-talk
-                title="Voyagez avec TensorflowJS"
-                slides="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js"
-              ></jssophia-talk>
               <jssophia-speaker
-                class="talk__info"
-                name="Marius Mézerette"
-                twitter="MeZPhotos"
-                github="MariusMez"
-                avatar="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
+                name="Michèle Legait"
+                twitter="mlegait"
+                github="mlegait"
+                avatar="https://pbs.twimg.com/profile_images/998304606160486400/rAB6aJxV_200x200.jpg"
               ></jssophia-speaker>
-            </li>
-            <li class="session__talk">
-              <jssophia-talk
-                title="Connectez votre webapp React à une source de vérité Redux"
-              ></jssophia-talk>
-              <jssophia-speaker
-                class="talk__info"
-                name="Maxime Sénécal"
-                twitter="maxime_senecal"
-                avatar="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
-              ></jssophia-speaker>
-            </li>
-          </ul>
-        </article>
-        <article class="talks">
-          <h3 class="talks__session">
-            JSSophia #3
-            <span class="talks__date">25 Avril 2019</span>
-          </h3>
-          <ul>
-            <li class="session__talk">
-              <jssophia-talk
-                title="JavaScript Code Splitting"
-                slides="https://speakerdeck.com/oad/javascript-code-splitting"
-              ></jssophia-talk>
-              <jssophia-speaker
-                class="talk__info"
-                name="Olivier Audard"
-                twitter="_dhar"
-                github="dharFr"
-                avatar="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
-              ></jssophia-speaker>
-            </li>
-            <li class="session__talk">
-              <jssophia-talk
-                title="Reprenez le contrôle de votre code avec TypeScript"
-                slides="https://t.co/KDTQw3xdZ6"
-              ></jssophia-talk>
-              <jssophia-speaker
-                class="talk__info"
-                name="Romain Drevet"
-                twitter="Romain_Drevet"
-                avatar="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
-              ></jssophia-speaker>
-            </li>
-          </ul>
-        </article>
-        <article class="talks">
-          <h3 class="talks__session">
-            JSSophia #2
-            <span class="talks__date">14 Mars 2019</span>
-          </h3>
-          <ul>
-            <li class="session__talk">
-              <jssophia-talk
-                title="Boostez le chargement de vos images !"
-                slides="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia"
-              ></jssophia-talk>
-              <jssophia-speaker
-                class="talk__info"
-                name="Jean-Michael Legait"
-                twitter="jmlegait"
-                github="Jean-Michael"
-                avatar="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
-              ></jssophia-speaker>
-            </li>
-            <li class="session__talk">
-              <jssophia-talk
-                title="JS asynchrone, du cauchemar à la quiétude"
-                slides="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html"
-              ></jssophia-talk>
-              <jssophia-speaker
-                class="talk__info"
-                name="Frédéric Guillaume"
-                twitter="fredguillaume"
-                github="Fred-el-Jolo"
-                avatar="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
-              ></jssophia-speaker>
-            </li>
-          </ul>
-        </article>
-        <article class="talks">
-          <h3 class="talks__session">
-            JSSophia #1
-            <span class="talks__date">26 Septembre 2018</span>
-          </h3>
-          <ul class="unstyled">
-            <li>
-              Kick-off de lancement à 19h chez Sogeti. Suivi d'un verre au
-              Maître Kanter.
-            </li>
-          </ul>
-        </article>
+            </div>
+          </article>
+        </div>
+        <!--<div class="sponsors">
+          <h4>Merci à nos sponsors de cette soirée !</h4>
+          <div class="sponsors__list">
+            <a href="https://www.altran.com" class="sponsor__link">
+              <img src="img/logo/altran.svg" alt="Altran" class="sponsor__logo" />
+            </a>
+          </div>
+        </div>-->
+      </section>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #4</h2>
+          <h3>27 Juin 2019</h3>
+        </div>
+        <div class="talks">
+          <article class="session__talk">
+            <jssophia-talk
+              title="Voyagez avec TensorflowJS"
+              slides="https://speakerdeck.com/mariusmez/voyagez-avec-tensorflow-dot-js"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Marius Mézerette"
+              twitter="MeZPhotos"
+              github="MariusMez"
+              avatar="https://avatars0.githubusercontent.com/u/952685?s=460&v=4"
+            ></jssophia-speaker>
+          </article>
+          <article class="session__talk">
+            <jssophia-talk
+              title="Connectez votre webapp React à une source de vérité Redux"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Maxime Sénécal"
+              twitter="maxime_senecal"
+              avatar="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg"
+            ></jssophia-speaker>
+          </article>
+        </div>
+      </section>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #3</h2>
+          <h3>25 Avril 2019</h3>
+        </div>
+        <div class="talks">
+          <article class="session__talk">
+            <jssophia-talk
+              title="JavaScript Code Splitting"
+              slides="https://speakerdeck.com/oad/javascript-code-splitting"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Olivier Audard"
+              twitter="_dhar"
+              github="dharFr"
+              avatar="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg"
+            ></jssophia-speaker>
+          </article>
+          <article class="session__talk">
+            <jssophia-talk
+              title="Reprenez le contrôle de votre code avec TypeScript"
+              slides="https://t.co/KDTQw3xdZ6"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Romain Drevet"
+              twitter="Romain_Drevet"
+              avatar="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg"
+            ></jssophia-speaker>
+          </article>
+        </div>
+      </section>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #2</h2>
+          <h3>14 Mars 2019</h3>
+        </div>
+        <div class="talks">
+          <article class="session__talk">
+            <jssophia-talk
+              title="Boostez le chargement de vos images !"
+              slides="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Jean-Michael Legait"
+              twitter="jmlegait"
+              github="Jean-Michael"
+              avatar="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg"
+            ></jssophia-speaker>
+          </article>
+          <article class="session__talk">
+            <jssophia-talk
+              title="JS asynchrone, du cauchemar à la quiétude"
+              slides="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Frédéric Guillaume"
+              twitter="fredguillaume"
+              github="Fred-el-Jolo"
+              avatar="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg"
+            ></jssophia-speaker>
+          </article>
+        </div>
+      </section>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #1</h2>
+          <h3>26 Septembre 2018</h3>
+        </div>
+        <div class="talks">
+          <article>
+            Kick-off de lancement à 19h chez Sogeti. Suivi d'un verre au
+            Maître Kanter.
+          </article>
+        </div>
       </section>
     </main>
     <footer class="footer">

@@ -498,54 +498,48 @@ h5 {
   margin-top: 1rem; }
 
 /* Sessions */
-.sessions,
-.speakers {
-  margin: 1rem 0;
+.session {
+  margin: 1rem 0 2rem;
   background: #fff;
   border-radius: 0.5rem;
-  padding: 1em 1em 2em 1em;
+  padding: 1rem;
   border: 1px solid #cecece; }
-  .sessions__title,
-  .speakers__title {
+  .session__title {
+    display: flex;
+    flex-direction: column;
     color: #aaa5a5;
     margin: 0; }
-
-.session__talk {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem; }
-
-.talks {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  color: #222;
-  border-top: 1px dashed #ddd; }
-  .talks__date {
-    color: #aaa5a5;
-    vertical-align: bottom; }
-  .talks__session {
-    color: #001b66;
-    display: flex;
-    flex-direction: column; }
-    @media (min-width: 768px) {
-      .talks__session {
+    @media (min-width: 992px) {
+      .session__title {
         flex-direction: row;
+        align-items: center;
         justify-content: space-between; } }
-  .talks__title {
-    display: block;
-    margin: 0.5em 0 0 0;
-    font-size: 1.2rem; }
-    @media (min-width: 768px) {
-      .talks__title {
-        font-size: 1.5rem; } }
-  .talks__speaker {
-    display: block;
-    margin: 0;
-    font-size: 1.2rem; }
-    .talks__speaker a {
-      margin-right: 1em;
-      padding-left: 0.5em;
-      border-left: 0.5em solid #1e7fcb; }
+  .session__talk {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; }
+
+.talks,
+.sponsors {
+  padding: 0.5em;
+  border-top: 1px dashed #aaa5a5; }
+
+.talks__title {
+  display: block;
+  margin: 0.5em 0 0 0;
+  font-size: 1.2rem; }
+  @media (min-width: 768px) {
+    .talks__title {
+      font-size: 1.5rem; } }
+
+.talks__speaker {
+  display: block;
+  margin: 0;
+  font-size: 1.2rem; }
+  .talks__speaker a {
+    margin-right: 1em;
+    padding-left: 0.5em;
+    border-left: 0.5em solid #1e7fcb; }
 
 .talks iframe,
 .talks .mu-widget {
@@ -584,6 +578,17 @@ h5 {
   width: 100px;
   float: left;
   margin-right: 5px; }
+
+.sponsors__list {
+  display: flex;
+  justify-content: center; }
+
+.sponsor__link {
+  display: block; }
+
+.sponsor__logo {
+  max-width: 200px;
+  max-height: 200px; }
 
 .team {
   display: grid;

@@ -12,21 +12,24 @@
 
 /* Sessions */
 
-.sessions,
-.speakers {
-  margin: 1rem 0;
+.session {
+  margin: $space-lg 0 $space-xl;
   background: $color-white;
   border-radius: $border-radius-md;
-  padding: 1em 1em 2em 1em;
+  padding: $space-lg;
   border: $border-thin solid $color-light-grey;
 
   &__title {
+    display: flex;
+    flex-direction: column;
     color: $color-medium-grey;
     margin: 0;
-  }
-}
-
-.session {
+    @media (min-width: $devices-min-width-lg) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }  
   &__talk {
     display: flex;
     flex-direction: column;
@@ -34,27 +37,13 @@
   }
 }
 
-.talks {
-  margin-bottom: 1em;
+.talks,
+.sponsors{
   padding: 0.5em;
-  color: $color-black;
-  border-top: 1px dashed #ddd;
+  border-top: 1px dashed $color-medium-grey;
+}
 
-  &__date {
-    color: $color-medium-grey;
-    vertical-align: bottom;
-  }
-
-  &__session {
-    color: $color-blue-dark;
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: $devices-min-width-md) {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
+.talks {
 
   &__title {
     display: block;
@@ -124,4 +113,21 @@
   width: 100px;
   float: left;
   margin-right: 5px;
+}
+
+.sponsors {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.sponsor{
+  &__link{
+    display: block;
+  }
+  &__logo{
+    max-width: 200px; 
+    max-height: 200px;
+  }
 }
