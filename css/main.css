@@ -495,7 +495,21 @@ h5 {
   margin-top: 1rem; }
 
 .about__meetup {
-  margin-top: 1rem; }
+  border-left: #1e7fcb 0.5rem solid;
+  margin-top: 1rem;
+  display: flex;
+  align-content: center;
+  padding: 0.5rem 0 0.5rem 0.5rem; }
+  @media (min-width: 992px) {
+    .about__meetup {
+      font-size: 1.5rem; } }
+
+.about__meetupLogo {
+  width: 70px;
+  margin: 0 0.5em; }
+  @media (min-width: 992px) {
+    .about__meetupLogo {
+      width: 100px; } }
 
 /* Sessions */
 .session {

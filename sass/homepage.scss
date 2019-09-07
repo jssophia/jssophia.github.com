@@ -6,7 +6,21 @@
 
 .about {
   &__meetup {
+    border-left: $color-blue-cyan 0.5rem solid;
     margin-top: $space-lg;
+    display: flex;
+    align-content: center;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    @media (min-width: $devices-min-width-lg) {
+      font-size: $font-size-md;
+    }
+  }
+  &__meetupLogo {
+    width: 70px;
+    @media (min-width: $devices-min-width-lg) {
+      width: 100px;
+    }
+    margin: 0 0.5em;
   }
 }
 
@@ -29,7 +43,7 @@
       align-items: center;
       justify-content: space-between;
     }
-  }  
+  }
   &__talk {
     display: flex;
     flex-direction: column;
@@ -38,13 +52,12 @@
 }
 
 .talks,
-.sponsors{
+.sponsors {
   padding: 0.5em;
   border-top: 1px dashed $color-medium-grey;
 }
 
 .talks {
-
   &__title {
     display: block;
     margin: 0.5em 0 0 0;
@@ -127,10 +140,10 @@
   }
 }
 
-$logo-width : 200px;
-$logo-height : 60px;
-.sponsor{
-  &__link{
+$logo-width: 200px;
+$logo-height: 60px;
+.sponsor {
+  &__link {
     width: $logo-width;
     height: $logo-height;
     display: inline-block;
@@ -142,7 +155,7 @@ $logo-height : 60px;
       margin-bottom: 0;
     }
   }
-  &__logo{
+  &__logo {
     max-height: 100%;
     max-width: 100%;
   }
