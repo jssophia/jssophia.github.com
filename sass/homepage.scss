@@ -117,17 +117,33 @@
 
 .sponsors {
   &__list {
+    margin-top: $space-lg;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $devices-min-width-md) {
+      display: block;
+    }
   }
 }
 
+$logo-width : 200px;
+$logo-height : 60px;
 .sponsor{
   &__link{
-    display: block;
+    width: $logo-width;
+    height: $logo-height;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-bottom: $space-lg;
+    }
+    @media (min-width: $devices-min-width-md) {
+      margin-right: $space-xl;
+      margin-bottom: 0;
+    }
   }
   &__logo{
-    max-width: 200px; 
-    max-height: 200px;
+    max-height: 100%;
+    max-width: 100%;
   }
 }
