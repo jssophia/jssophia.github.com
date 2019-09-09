@@ -617,6 +617,23 @@ h5 {
   max-height: 100%;
   max-width: 100%; }
 
+@media (min-width: 1350px) {
+  .code-of-conduct {
+    width: 80%; } }
+
+.code-of-conduct__title {
+  margin-top: 1rem; }
+
+.code-of-conduct__subtitle {
+  margin-top: 0.5rem; }
+
+.code-of-conduct > p {
+  margin: 1rem 0; }
+
+.code-of-conduct__footer {
+  margin: 1rem 0;
+  color: grey; }
+
 .team {
   display: grid;
   grid-template-columns: 1fr;

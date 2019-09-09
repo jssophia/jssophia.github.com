@@ -1,0 +1,22 @@
+.code-of-conduct {
+  @media (min-width: $devices-min-width-xl) {
+    width: 80%;
+  }
+
+  &__title {
+    margin-top: 1rem;
+  }
+
+  &__subtitle {
+    margin-top: 0.5rem;
+  }
+
+  & > p {
+    margin: 1rem 0;
+  }
+
+  &__footer {
+    margin: 1rem 0;
+    color: grey;
+  }
+}

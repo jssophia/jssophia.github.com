@@ -1,230 +1,221 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>JS Sophia-Antipolis</title>
-        <meta name="description" content="Meetup javascript sur Sophia-Antipolis">
-        <meta name="viewport" content="width=device-width">
-        
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>JS Sophia-Antipolis</title>
+    <meta name="description" content="Meetup javascript sur Sophia-Antipolis" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
 
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-
-        <nav role="nav">
-            <img src="img/JSSophia.svg" alt="" width="40" height="40">
-            <ul>
-                <li class="active"><a href="index.html">JSSophia</a></li>
-                <li><a href="archives.html">Archives</a></li>
-                <li><a href="coc.html">Code of conduct</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="iframe"><a href="https://twitter.com/JSSophia" class="twitter-follow-button" data-show-count="false" data-lang="fr" data-size="large">Suivre @JSSophia</a></li>
-            </ul>
+  <body>
+    <div class="menu">
+      <input
+        type="checkbox"
+        id="menuNavigationToggler"
+        class="menu__navigationToggler"
+      />
+      <nav class="menu__navigationBarWrapper">
+          <ul class="menu__navigationBar">
+            <li class="menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="index.html">Home</a>
+            </li>
+            <!--
+            <li class="menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="archives.html">
+                Archives
+              </a>
+            </li>
+            -->
+            <li class="active menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="coc.html">
+                Code of conduct
+              </a>
+            </li>
+            <li class="menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="contact.html">
+                L'équipe
+              </a>
+            </li>
+          </ul>
         </nav>
-        <header role="banner">
-            <hgroup>
-                <div class="logo">
-                    <img src="img/JSSophia.svg" alt="" width="200" height="200">
-                </div>
-                <h1 id="jssophia">
-                    COC
-                </h1>
-                <div class="about">
-                    <p>
-                        Aficionado Javascript de la première heure, utilisateur régulier ou juste curieux ?
-                        Intéressé par les frameworks/tools JS ou fan des saveurs vanille ?
-                        Le tout appliqué côté frontend, backend, voire plus encore ?
-                    </p>
-                    <p>
-                        N'hésitez plus, venez participer au JSSophia !
-                    </p>
-                </p>
-                <div class="clearfix"></div>
-            </hgroup>
-        </header>
-        <div class="content" role="main">
-            <section id="sessions">
-                <h2>Sessions</h2>
-                <!-- TALKS -->
-                <article>
-                    <h3>JSSophia #4<span class="date">27 Juin 2019</span></h3>
-                    <ul class="unstyled">
-                        <li>
-                            <h4>Voyagez avec TensorflowJS</h4> 
-                            <h5><a href="https://twitter.com/MeZPhotos">Marius Mézerette</a></h5>
-                        </li>
-                        <li>
-                            <h4>Connectez votre webapp React à une source de vérité Redux</h4>
-                            <h5><a href="https://twitter.com/maxime_senecal">Maxime Sénécal</a></h5>
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>JSSophia #3<span class="date">25 Avril 2019</span></h3>
-                    <ul class="unstyled">
-                        <li>
-                            <h4>JavaScript Code Splitting</h4> 
-                            <h5><a href="https://twitter.com/_dhar">Olivier Audard</a></h5>
-                            <h5><a href="https://speakerdeck.com/oad/javascript-code-splitting">Slides</a></h5>
-                        </li>
-                        <li>
-                            <h4>Reprenez le contrôle de votre code avec TypeScript</h4>
-                            <h5><a href="https://twitter.com/Romain_Drevet">Romain Drevet</a></h5>
-                            <h5><a href="https://t.co/KDTQw3xdZ6">Slides</a></h5>
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>JSSophia #2<span class="date">14 Mars 2019</span></h3>
-                    <ul class="unstyled">
-                        <li>
-                            <h4>Boostez le chargement de vos images !</h4> 
-                            <h5><a href="https://twitter.com/jmlegait">Jean-Michael Legait</a></h5>
-                            <h5><a href="https://speakerdeck.com/jmlegait/boostez-le-chargement-de-vos-images-jssophia">Slides</a></h5>
-                        </li>
-                        <li>
-                            <h4>JS asynchrone, du cauchemar à la quiétude</h4>
-                            <h5><a href="https://twitter.com/FredGuillaume">Frédéric Guillaume</a></h5>
-                            <h5><a href="https://aesthetecoding.io/talk/2019/03/14/asynchronous-js.html">Slides</a></h5>
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>JSSophia #1<span class="date">26 Septembre 2018</span></h3>
-                    <ul class="unstyled">
-                        <li>
-                            Kick-off de lancement à 19h chez Sogeti. Suivi d'un verre au Maître Kanter.
-                        </li>
-                    </ul>
-                </article>
-            </section>     
+      <div class="menu__wrapper">
+        <div >
+          <a class="menu__logoLink" href="index.html">
+            <img class="menu__logo" src="img/JSSophia.svg" alt=""/>
+          </a>
         </div>
-        <footer class="three-cols "> 
-            <section class="speakers">
-                <h2 id="intervenants">Intervenants</h2>
-                <ul>
-                    <li>
-                        <img src="https://pbs.twimg.com/profile_images/378800000666980812/bc6e9f60fa906a0965506745f4a778be_400x400.jpeg" alt="">
-                        <div class="speaker-infos">
-                            <h3>Frédéric Guillaume</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/fredguillaume">@fredguillaume</a></li>
-                                <li>Github: <a href="https://github.com/Fred-el-Jolo">Fred-el-Jolo</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <img src="https://pbs.twimg.com/profile_images/731961249710379010/OUnrgJLI_400x400.jpg" alt="">
-                        <div class="speaker-infos">
-                            <h3>Jean-Michael Legait</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/jmlegait">@jmlegait</a></li>
-                                <li>Github: <a href="https://github.com/Jean-Michael">Jean-Michael</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <img src="https://avatars0.githubusercontent.com/u/952685?s=460&v=4" alt="">
-                        <div class="speaker-infos">
-                            <h3>Marius Mézerette</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/MeZPhotos">@MeZPhotos</a></li>
-                                <li>Github: <a href="https://github.com/MariusMez">MariusMez</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <img src="https://pbs.twimg.com/profile_images/864740967978553344/ir5MrPf1_400x400.jpg" alt="">
-                        <div class="speaker-infos">
-                            <h3>Maxime Sénécal</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/maxime_senecal">@maxime_senecal</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <img src="https://pbs.twimg.com/profile_images/555252074460762112/nJq-j8jX_400x400.jpeg" alt="">
-                        <div class="speaker-infos">
-                            <h3>Olivier Audard</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/_dhar">@_dhar</a></li>
-                                <li>Github: <a href="https://github.com/dharFr">dharFr</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                    <li>
-                        <img src="https://pbs.twimg.com/profile_images/998136509793370114/QlTzCcpY_400x400.jpg" alt="">
-                        <div class="speaker-infos">
-                            <h3>Romain Drevet</h3>
-                            <ul>
-                                <li>Twitter: <a href="https://twitter.com/Romain_Drevet">@Romain_Drevet</a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </section>
-            <div>
-                <h2 id="contact">Nous contacter</h2>
-                <ul>
-                    <li>
-                        Par mail : <a href="mailto:contact@jssophia.io">contact@jssophia.io</a>
-                    </li>
-                    <li>
-                        Suivez <a href="https://twitter.com/jssophia">@JSSophia</a> sur Twitter
-                    </li>
-                    <!--<li>
-                        Participez aux discussions sur la <a href="https://groups.google.com/group/jssophia">mailing list</a>
-                    </li>
-                    <li>
-                        On est aussi sur <a href="https://github.com/jssophia">Github</a>
-                    </li>-->
-                </ul>
-            </div>
-            <div>
-                <h2>L'équipe</h2>
-                JSSophia est organisé par
-                <ul>
-                    <li><a href="https://twitter.com/FredGuillaume">Frédéric Guillaume</a></li>
-                    <li><a href="https://twitter.com/_dhar">Olivier Audard</a></li>
-                    <li><a href="https://twitter.com/jmlegait">Jean-Michael Legait</a></li>
-                    <li><a href="https://twitter.com/JulienHoltzer">Julien Holtzer</a></li>
-                    <li><a href="https://twitter.com/Romain_Drevet">Romain Drevet</a></li>
-                    <li><a href="https://twitter.com/maxime_senecal">Maxime Sénécal</a></li>
-                </ul>
-                <!-- Ajoute ton nom ici  -->
-            </div>
-            <!--<div>
-                <h2>Soutien</h2>
-                Nos réunions sont hébergées et sponsorisées par <a href="https://www.avisto.com/">Avisto</a>.
-            </div>-->
-        </footer>
-        
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <h1 class="menu__title">
+          JS Sophia
+        </h1>
+        <div class="menu__navigationTogglerLabelWrapper">
+          <label
+            class="menu__navigationTogglerLabel"
+            for="menuNavigationToggler"
+          >
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+            <span class="menu__navigationTogglerLine"></span>
+          </label>
+        </div>
 
-        <!-- Twitter -->
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+    </div>
 
-        <!-- Meetup -->
-        <!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://secure.meetup.com/script/21021123101537681383/api/mu.btns.js?id=5h1bt1h85oolt13bu8teutcrou";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script> -->
-                 
-        <!-- <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script> -->
-    </body>
+    <main class="code-of-conduct">
+      <h1 class="code-of-conduct__title">Code de conduite</h1>
+      <p>
+        Tous les participants, conférenciers, sponsors et volontaires pour notre
+        conférence doivent accepter le code de conduite suivant.
+      </p>
+      <p>
+        Les organisateurs s'engagent à faire respecter ce code durant l'événement.
+      </p>
+      <p>
+        Nous attendons de chaque participant une pleine coopération afin d'assurer un
+        environnement sain pour tous.
+      </p>
+  
+      <h2 class="code-of-conduct__subtitle">La version rapide</h2>
+  
+      <p>
+        Notre conférence se veut une expérience sans harcèlement, quel que soit
+        votre sexe, votre identité sexuelle, votre âge, votre orientation
+        sexuelle, votre handicap, votre apparence physique, votre poids, votre
+        race ou votre religion.
+      </p>
+      <p>
+        Nous ne tolérons aucun harcèlement des participants à la conférence, quel que soit sa forme. Les expressions et
+        les images allant à l'encontre de ces principes ne sont pas appropriées lors de
+        l'événement. Ceci inclut les conférences, les ateliers, les soirées,
+        Twitter et les autres médias en ligne.
+      </p>
+      <p>
+        Les participants à la conférence qui violent ces règles peuvent être sanctionnés, voire exclus de la
+        conférence <em>sans remboursement</em>, à la discrétion des organisateurs
+        de la conférence.
+      </p>
+  
+      <h2 class="code-of-conduct__subtitle">La version moins rapide</h2>
+  
+      <p>
+        Le harcèlement inclut des commentaires oraux sur le sexe, l'identité
+        sexuelle, l'âge, l'orientation sexuelle, le handicap, l'apparence
+        physique, le poids, la race, la religion, les intimidations délibérées, la traque,
+        la poursuite, un harcèlement photographique ou vidéo, une suite
+        d'interruption des conférences et des autres événements, un contact
+        physique inapproprié et des avances sexuelles non désirées.
+      </p>
+  
+      <p>
+        Les participants à qui il sera demandé d'arrêter tout comportement de
+        harcèlement devront cesser immédiatement.
+      </p>
+  
+      <p>
+        Les sponsors sont aussi sujet à la politique anti-harcèlement. En
+        particulier, les sponsors doivent adapter leurs images, matériels, 
+        activités, stands et costumes afin de respecter ces règles.
+      </p>%
+  
+      <p>
+        Si un participant présente un comportement de harcèlement, les organisateurs de
+        la conférence peuvent prendre toute action qui leur semble adéquate. Cela
+        peut prendre la forme d'un simple avertissement ou de l'exclusion du participant
+        de la conférence sans remboursement.
+      </p>
+  
+      <p>
+        Si vous vous sentez harcelé, si vous pensez que quelqu'un se fait
+        harceler, et plus généralement en cas de problème, merci de contacter
+        immédiatement un membre de l'organisation de l'événement. Les membres sont
+        facilement identifiables à leur badges et/ou t-shirts aux couleurs de l'événement.
+      </p>
+  
+      <p>
+        Les membres de l'organisation s'engagent à aider les participants à
+        contacter la sécurité du bâtiment où se déroule l'événement, éventuellement
+        les forces de l'ordre, à accompagner ainsi qu'à aider de toute
+        autre façon les personnes victimes de harcèlement, pour garantir leur
+        sécurité pendant la durée de l'événement. Nous sommes fiers de votre
+        participation à l'événement.
+      </p>
+  
+      <p>
+        Nous attendons des participants qu'ils suivent ces règles dans le bâtiment
+        des conférences et des ateliers, et lors des événements sociaux relatifs
+        à la conférence.
+      </p>
+      <div class="code-of-conduct__footer">
+        <p>
+          <small
+            ><em
+              >Version originale et crédit:
+              <a href="http://2012.jsconf.us/#/about"
+                >http://2012.jsconf.us/#/about</a
+              >
+              &amp;
+              <a
+                href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy"
+                >The Ada Initiative</a
+              ><br />
+  
+              Merci d'aider à la traduction et à l'amélioration de ce texte :
+              <a href="https://github.com/confcodeofconduct/confcodeofconduct.com"
+                >on github.com</a
+              ><br />
+  
+              Ce texte est sous licence
+              <a
+                rel="license"
+                href="http://creativecommons.org/licenses/by/3.0/deed.en_US"
+                >Creative Commons Attribution 3.0 Unported License</a
+              ></em
+            ></small
+          >
+        </p>
+      </div>
+      
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a class="menu__logoLink" href="index.html">
+            <img src="img/JSSophia.svg" alt="" width="40" height="40" />
+          </a>
+        </div>
+        <ul class="footer__itemList">
+          <li class="footer__item">
+            <span class="footer__icon">
+              &#9993;
+            </span>
+            <a class="footer__link" href="mailto:contact@jssophia.io">
+              contact@jssophia.io
+            </a>
+          </li>
+          <li class="footer__item">
+            <img src="img/twitter-white.svg" alt="" class="footer__icon" />
+            <a class="footer__link" href="https://twitter.com/jssophia">
+              @JSSophia
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script src="js/vendor/jquery-1.11.0.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+    </footer>
+  </body>
 </html>
