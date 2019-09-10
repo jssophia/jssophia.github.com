@@ -2,3 +2,13 @@
   width: 100vw;
   margin: 0 -13%;
 }
+
+@mixin parallax($backgroundUrl) {
+  @include fullscreen();
+  background-image: url($backgroundUrl);
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

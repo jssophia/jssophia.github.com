@@ -2,6 +2,11 @@
   &__title {
     margin-top: 1rem;
   }
+  &__titleWrapper {
+    @include parallax('../img/people.jpg');
+    color: $color-white-smoke;
+    padding: $space-xl;
+  }
 }
 
 .about {
