@@ -616,6 +616,8 @@ h5 {
 .sponsor__logo {
   max-height: 100%;
   max-width: 100%; }
+  .sponsor__logo--RivieraDEV {
+    max-height: none; }
 
 @media (min-width: 1350px) {
   .code-of-conduct {

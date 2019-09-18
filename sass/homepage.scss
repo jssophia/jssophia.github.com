@@ -158,5 +158,9 @@ $logo-height: 60px;
   &__logo {
     max-height: 100%;
     max-width: 100%;
+
+    &--RivieraDEV {
+      max-height: none;
+    }
   }
 }
