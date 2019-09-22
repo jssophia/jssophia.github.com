@@ -4,8 +4,12 @@
 }
 
 @mixin parallax($backgroundUrl) {
-  @include fullscreen();
-  background-image: url($backgroundUrl);
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    url($backgroundUrl);
   height: 500px;
   background-attachment: fixed;
   background-position: center;

@@ -1,4 +1,10 @@
 .code-of-conduct {
+  &__menu {
+    position: sticky;
+    top: 0;
+    @include fullscreen;
+  }
+
   @media (min-width: $devices-min-width-xl) {
     width: 80%;
   }

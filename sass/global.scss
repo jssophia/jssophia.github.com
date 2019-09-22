@@ -176,17 +176,13 @@ $logo-margin: 1rem;
 $color-hover-light-blue: #001b66;
 
 .menu {
-  position: sticky;
-  top: 0;
   margin: 0;
-  background: $color-blue;
+  background-color: $color-blue;
   height: $menu-height-smallScreen;
 
   @media (min-width: $devices-min-width-md) {
     height: $menu-height-largeScreen;
   }
-
-  @include fullscreen;
 
   &__title {
     display: inline-block;
@@ -258,7 +254,7 @@ $color-hover-light-blue: #001b66;
   }
 
   &__navigationBarLink {
-    color: white;
+    color: $color-white-smoke;
     &:hover {
       text-decoration: none;
     }

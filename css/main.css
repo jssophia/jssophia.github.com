@@ -278,13 +278,9 @@ h5 {
    Navigation bar
    ========================================================================== */
 .menu {
-  position: sticky;
-  top: 0;
   margin: 0;
-  background: #0036cc;
-  height: 4.5rem;
-  width: 100vw;
-  margin: 0 -13%; }
+  background-color: #0036cc;
+  height: 4.5rem; }
   @media (min-width: 768px) {
     .menu {
       height: 7.5rem; } }
@@ -340,7 +336,7 @@ h5 {
     .menu__navigationBarItem:hover {
       background-color: #001b66; }
   .menu__navigationBarLink {
-    color: white; }
+    color: #f7f7f7; }
     .menu__navigationBarLink:hover {
       text-decoration: none; }
   .menu__navigationTogglerLabelWrapper {
@@ -493,19 +489,27 @@ h5 {
         align-items: flex-start; } }
 
 /* The different pages specific styling */
-.home__title {
-  margin-top: 1rem; }
-.home__titleWrapper {
-  width: 100vw;
-  margin: 0 -13%;
-  background-image: url("../img/people.jpg");
+.home__menuAndHeader {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/people.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #f7f7f7;
+  width: 100vw;
+  margin: 0 -13%; }
+.home__title {
+  margin-top: 1rem; }
+.home__titleWrapper {
+  color: #001b66;
   padding: 2rem; }
+.home__menu.menu {
+  background-color: transparent; }
+  .home__menu.menu .menu__title,
+  .home__menu.menu .menu__navigationBarLink {
+    color: #001b66; }
+  .home__menu.menu .menu__navigationBarLink:hover {
+    color: #f7f7f7; }
 
 .about__meetup {
   border-left: #1e7fcb 0.5rem solid;
@@ -626,6 +630,11 @@ h5 {
   .sponsor__logo--RivieraDEV {
     max-height: none; }
 
+.code-of-conduct__menu {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  margin: 0 -13%; }
 @media (min-width: 1350px) {
   .code-of-conduct {
     width: 80%; } }
@@ -646,6 +655,11 @@ h5 {
   grid-auto-rows: 1fr;
   grid-gap: 2rem;
   margin-bottom: 1rem; }
+  .team__menu {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin: 0 -13%; }
   @media (min-width: 576px) {
     .team {
       grid-template-columns: 1fr 1fr; } }
