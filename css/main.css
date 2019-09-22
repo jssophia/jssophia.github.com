@@ -491,7 +491,7 @@ h5 {
 /* The different pages specific styling */
 .home__menuAndHeader {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/people.jpg");
-  height: 500px;
+  height: 520px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
