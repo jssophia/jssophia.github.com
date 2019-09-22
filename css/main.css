@@ -505,11 +505,17 @@ h5 {
   padding: 2rem; }
 .home__menu.menu {
   background-color: transparent; }
-  .home__menu.menu .menu__title,
-  .home__menu.menu .menu__navigationBarLink {
+  .home__menu.menu .menu__title {
     color: #001b66; }
-  .home__menu.menu .menu__navigationBarLink:hover {
+  .home__menu.menu .menu__navigationBarLink {
     color: #f7f7f7; }
+    .home__menu.menu .menu__navigationBarLink:hover {
+      color: #f7f7f7; }
+    @media (min-width: 768px) {
+      .home__menu.menu .menu__navigationBarLink {
+        color: #001b66; } }
+  .home__menu.menu .menu__navigationTogglerLine {
+    border-top-color: #001b66; }
 
 .about__meetup {
   border-left: #1e7fcb 0.5rem solid;

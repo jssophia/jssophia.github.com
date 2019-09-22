@@ -14,12 +14,20 @@
 
   &__menu.menu {
     background-color: transparent;
-    .menu__title,
-    .menu__navigationBarLink {
+    .menu__title {
       color: $color-blue-dark;
     }
-    .menu__navigationBarLink:hover {
+    .menu__navigationBarLink {
       color: $color-white-smoke;
+      &:hover {
+        color: $color-white-smoke;
+      }
+      @media (min-width: $devices-min-width-md) {
+        color: $color-blue-dark;
+      }
+    }
+    .menu__navigationTogglerLine {
+      border-top-color: $color-blue-dark;
     }
   }
 }
