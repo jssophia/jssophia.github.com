@@ -1,6 +1,34 @@
 .home {
+  &__menuAndHeader {
+    @include parallax('../img/jssophia.jpeg');
+    @include fullscreen();
+  }
+
   &__title {
     margin-top: 1rem;
+  }
+  &__titleWrapper {
+    color: $color-blue-dark;
+    padding: $space-xl;
+  }
+
+  &__menu.menu {
+    background-color: transparent;
+    .menu__title {
+      color: $color-blue-dark;
+    }
+    .menu__navigationBarLink {
+      color: $color-white-smoke;
+      &:hover {
+        color: $color-white-smoke;
+      }
+      @media (min-width: $devices-min-width-md) {
+        color: $color-blue-dark;
+      }
+    }
+    .menu__navigationTogglerLine {
+      border-top-color: $color-blue-dark;
+    }
   }
 }
 

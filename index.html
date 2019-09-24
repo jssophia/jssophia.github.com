@@ -24,85 +24,89 @@
   </head>
 
   <body>
-    <div class="menu">
-      <input
-        type="checkbox"
-        id="menuNavigationToggler"
-        class="menu__navigationToggler"
-      />
-      <nav class="menu__navigationBarWrapper">
-        <ul class="menu__navigationBar">
-          <li class="active menu__navigationBarItem">
-            <a class="menu__navigationBarLink" href="index.html">Home</a>
-          </li>
-          <!--
-          <li class="menu__navigationBarItem">
-            <a class="menu__navigationBarLink" href="archives.html">
-              Archives
+    <div class="home__menuAndHeader">
+      <div class="home__menu menu">
+        <input
+          type="checkbox"
+          id="menuNavigationToggler"
+          class="menu__navigationToggler"
+        />
+        <nav class="menu__navigationBarWrapper">
+          <ul class="menu__navigationBar">
+            <li class="active menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="index.html">Home</a>
+            </li>
+            <!--
+                <li class="menu__navigationBarItem">
+                  <a class="menu__navigationBarLink" href="archives.html">
+                    Archives
+                  </a>
+                </li>
+                -->
+            <li class="menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="coc.html">
+                Code of conduct
+              </a>
+            </li>
+            <li class="menu__navigationBarItem">
+              <a class="menu__navigationBarLink" href="contact.html">
+                L'équipe
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__wrapper">
+          <div>
+            <a class="menu__logoLink" href="index.html">
+              <img class="menu__logo" src="img/JSSophia.svg" alt="" />
             </a>
-          </li>
-          -->
-          <li class="menu__navigationBarItem">
-            <a class="menu__navigationBarLink" href="coc.html">
-              Code of conduct
-            </a>
-          </li>
-          <li class="menu__navigationBarItem">
-            <a class="menu__navigationBarLink" href="contact.html">
-              L'équipe
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu__wrapper">
-        <div>
-          <a class="menu__logoLink" href="index.html">
-            <img class="menu__logo" src="img/JSSophia.svg" alt="" />
-          </a>
-        </div>
-        <h1 class="menu__title">
-          JS Sophia
-        </h1>
-        <div class="menu__navigationTogglerLabelWrapper">
-          <label
-            class="menu__navigationTogglerLabel"
-            for="menuNavigationToggler"
-          >
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-            <span class="menu__navigationTogglerLine"></span>
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <header>
-      <h2 class="home__title">
-        Meetup Javascript sur Sophia-Antipolis (06)
-      </h2>
-      <div class="about">
-        <p>
-          Aficionado Javascript de la première heure, utilisateur régulier ou
-          juste curieux ? Intéressé par les frameworks/tools JS ou fan des
-          saveurs vanille ? Le tout appliqué côté frontend, backend, voire plus
-          encore ?
-        </p>
-        <p>
-          N'hésitez plus, venez participer au JSSophia !
-        </p>
-        <div class="about__meetup">
-          <p>
-            Inscription sur notre page<a href="https://www.meetup.com/jssophia"
-              ><img
-                src="img/logo/meetup.svg"
-                alt="Meetup"
-                class="about__meetupLogo"
-              />https://www.meetup.com/jssophia</a
+          </div>
+          <h1 class="menu__title">
+            JS Sophia
+          </h1>
+          <div class="menu__navigationTogglerLabelWrapper">
+            <label
+              class="menu__navigationTogglerLabel"
+              for="menuNavigationToggler"
             >
-          </p>
+              <span class="menu__navigationTogglerLine"></span>
+              <span class="menu__navigationTogglerLine"></span>
+              <span class="menu__navigationTogglerLine"></span>
+            </label>
+          </div>
         </div>
       </div>
-    </header>
+
+      <header class="home__titleWrapper">
+        <h2 class="home__title">
+          Meetup Javascript sur Sophia-Antipolis (06)
+        </h2>
+        <div class="about">
+          <p>
+            Aficionado Javascript de la première heure, utilisateur régulier ou
+            juste curieux ? Intéressé par les frameworks/tools JS ou fan des
+            saveurs vanille ? Le tout appliqué côté frontend, backend, voire
+            plus encore ?
+          </p>
+          <p>
+            N'hésitez plus, venez participer au JSSophia !
+          </p>
+          <div class="about__meetup">
+            <p>
+              Inscription sur notre page
+              <a href="https://www.meetup.com/jssophia">
+                <img
+                  src="img/logo/meetup.svg"
+                  alt="Meetup"
+                  class="about__meetupLogo"
+                />
+                https://www.meetup.com/jssophia
+              </a>
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
 
     <main class="main">
       <section class="session">

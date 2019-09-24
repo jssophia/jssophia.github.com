@@ -1,4 +1,10 @@
 .team {
+  &__menu {
+    position: sticky;
+    top: 0;
+    @include fullscreen;
+  }
+
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
