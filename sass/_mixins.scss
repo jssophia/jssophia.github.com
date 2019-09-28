@@ -5,9 +5,9 @@
 
 @mixin parallax($backgroundUrl) {
   background-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.6) 0%,
-      rgba(255, 255, 255, 0.8) 100%
+      to bottom left,
+      transparent,
+      rgba(255, 255, 255, 0.8) 50%
     ),
     url($backgroundUrl);
   height: 520px;
