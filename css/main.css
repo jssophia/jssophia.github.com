@@ -510,7 +510,7 @@ h5 {
 
 /* The different pages specific styling */
 .home__menuAndHeader {
-  background-image: linear-gradient(to bottom left, transparent, rgba(255, 255, 255, 0.8) 50%), url("../img/jssophia.jpeg");
+  background-image: linear-gradient(to bottom left, transparent, rgba(255, 255, 255, 0.8) 50%), url("../img/jssophia-wide.jpeg");
   height: 520px;
   background-attachment: fixed;
   background-position: center;
