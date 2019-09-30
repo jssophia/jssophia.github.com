@@ -7,18 +7,16 @@ class Talk extends HTMLElement {
 
   getSlidesTag() {
     if (this.slides) {
-      return `<div class="talk__slide">
-                <a href="${this.slides}">Slides</a>
-            </div>`;
+      return `<span class="talk__slide"><a href="${this.slides}" class="talk__url"><i class="fas fa-desktop"></i> Slides</a></span>`;
     }
     return "";
   }
 
   connectedCallback() {
     this.innerHTML = `
-        <div class="talk__title">
+        <span class="talk__title">
             ${this.title}
-        </div>
+        </span>
         ${this.getSlidesTag()}`;
   }
 }

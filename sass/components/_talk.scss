@@ -19,4 +19,19 @@
       align-items: flex-start;
     }
   }
+
+  &__url {
+    margin-left: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    background-color: $color-blue-cyan;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $color-blue-dark;
+    }
+  }
 }
