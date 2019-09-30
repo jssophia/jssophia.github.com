@@ -489,8 +489,14 @@ h5 {
       .talk__info {
         flex-direction: row;
         align-items: flex-start; } }
+  .talk__slide {
+    display: block;
+    margin: 1rem 0 0; }
+    @media (min-width: 576px) {
+      .talk__slide {
+        display: inline;
+        margin: 0 0 0 1rem; } }
   .talk__url {
-    margin-left: 1rem;
     padding: 0.2rem 1rem;
     border-radius: 1rem;
     background-color: #1e7fcb;
