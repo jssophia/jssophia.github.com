@@ -1,15 +1,34 @@
 .home {
   &__menuAndHeader {
-    @include parallax('../img/jssophia.jpeg');
+    @include parallax('../img/jssophia-wide.jpeg');
     @include fullscreen();
   }
 
-  &__title {
-    margin-top: 1rem;
+  &__headerWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   &__titleWrapper {
     color: $color-blue-dark;
     padding: $space-xl;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: $font-size-md;
+    font-weight: bold;
+    color: $color-blue-dark;
+    text-align: center;
+    display: none;
+    @media (min-width: $devices-min-width-md) {
+      display: block;
+    }
   }
 
   &__menu.menu {
@@ -33,6 +52,9 @@
 }
 
 .about {
+  margin-top: $space-lg;
+  font-size: $font-size-sm;
+
   &__meetup {
     border-left: $color-blue-cyan 0.5rem solid;
     margin-top: $space-lg;

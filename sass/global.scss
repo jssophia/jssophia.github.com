@@ -171,32 +171,29 @@ h5 {
    ========================================================================== */
 $menu-padding: 1rem;
 $logo-size-small: 3rem;
-$logo-size-large: 6rem;
-$logo-margin: 1rem;
+$logo-size-large: 8rem;
+$logo-margin-right: 3rem;
+$logo-margin-left: 1rem;
 $color-hover-light-blue: #001b66;
 
 .menu {
   margin: 0;
   background-color: $color-blue;
-  height: $menu-height-smallScreen;
-
-  @media (min-width: $devices-min-width-md) {
-    height: $menu-height-largeScreen;
-  }
+  height: 100%;
 
   &__title {
     display: inline-block;
     font-size: $font-size-lg;
-    padding: 1rem;
+    padding: 1rem 0;
     color: $color-white-smoke;
     white-space: nowrap;
     flex: 1;
     text-align: center;
-    margin-right: $logo-size-small + $logo-margin;
+    margin-right: 3rem;
     @media (min-width: $devices-min-width-md) {
       padding: 0;
       font-size: $font-size-xxl;
-      margin-right: $logo-size-large + $logo-margin;
+      margin-right: 0;
     }
   }
 
@@ -206,9 +203,6 @@ $color-hover-light-blue: #001b66;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    @media (min-width: $devices-min-width-md) {
-      padding: 1rem 0;
-    }
   }
 
   &__navigationBar {
@@ -222,13 +216,14 @@ $color-hover-light-blue: #001b66;
   }
 
   &__logo {
-    margin-right: $logo-margin;
+    margin: 0 $logo-margin-right 0 $logo-margin-left;
     width: $logo-size-small;
     height: $logo-size-small;
     transition: all 0.5s ease-out;
     @media (min-width: $devices-min-width-md) {
       width: $logo-size-large;
       height: $logo-size-large;
+      margin: 1rem $logo-margin-right;
     }
   }
 
@@ -279,7 +274,7 @@ $color-hover-light-blue: #001b66;
 
   &__navigationTogglerLine {
     display: block;
-    width: 25px;
+    width: 1.5rem;
     border-top: 2px solid #eee;
     &:not(:last-child) {
       height: 10px;
