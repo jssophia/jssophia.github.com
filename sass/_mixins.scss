@@ -10,7 +10,9 @@
       rgba(255, 255, 255, 0.8) 50%
     ),
     url($backgroundUrl);
-  height: 520px;
+    @media (min-width: $devices-min-width-lg) {
+      height: 520px;
+    }
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
