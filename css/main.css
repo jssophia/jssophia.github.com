@@ -687,6 +687,10 @@ h5 {
   width: 100vw;
   margin: 0 -13%; }
 
+.code-of-conduct__list {
+  list-style: square;
+  padding-left: 1rem; }
+
 @media (min-width: 1350px) {
   .code-of-conduct {
     width: 80%; } }

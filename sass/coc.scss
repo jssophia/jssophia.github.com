@@ -5,6 +5,11 @@
     @include fullscreen;
   }
 
+  &__list {
+    list-style: square;
+    padding-left: 1rem;
+  }
+
   @media (min-width: $devices-min-width-xl) {
     width: 80%;
   }
