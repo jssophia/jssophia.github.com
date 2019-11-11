@@ -16,7 +16,7 @@ html {
 
 body {
   line-height: 1.4;
-  font-family: 'Raleway', 'sans-serif';
+  font-family: "Raleway", "sans-serif";
   margin: 0 auto;
   background: $color-white-smoke;
   width: 80%;
@@ -77,7 +77,7 @@ a:hover {
 
 h1 {
   font-size: $font-size-xl;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   color: $color-blue;
   padding: 1.5rem 0;
   @media (min-width: $devices-min-width-md) {
@@ -360,7 +360,7 @@ $color-hover-light-blue: #001b66;
 }
 
 .ir:before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 150%;
@@ -398,7 +398,7 @@ $color-hover-light-blue: #001b66;
 
 .clearfix:before,
 .clearfix:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 
