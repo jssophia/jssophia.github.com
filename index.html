@@ -16,7 +16,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- load webcomponents bundle, which includes all the necessary polyfills -->
@@ -69,52 +72,106 @@
           </div>
         </div>
         <header class="home__headerWrapper">
-            <div>
-              <a class="menu__logoLink" href="index.html">
-                <img class="menu__logo" src="img/JSSophia.svg" alt="" />
-              </a>
-            </div>
-            <div class="home__title">
-              <h1 class="menu__title">
-                JS Sophia
-              </h1>
-              <h2 class="home__subtitle">
-                Meetup Javascript sur Sophia-Antipolis (06)
-              </h2>
-            </div>
+          <div>
+            <a class="menu__logoLink" href="index.html">
+              <img class="menu__logo" src="img/JSSophia.svg" alt="" />
+            </a>
+          </div>
+          <div class="home__title">
+            <h1 class="menu__title">
+              JS Sophia
+            </h1>
+            <h2 class="home__subtitle">
+              Meetup Javascript sur Sophia-Antipolis (06)
+            </h2>
+          </div>
         </header>
       </div>
     </div>
 
     <main class="main">
       <div class="about">
+        <p>
+          Aficionado Javascript de la première heure, utilisateur régulier ou
+          juste curieux ? Intéressé par les frameworks/tools JS ou fan des
+          saveurs vanille ? Le tout appliqué côté frontend, backend, voire plus
+          encore ?
+        </p>
+        <p>
+          N'hésitez plus, venez participer au JSSophia !
+        </p>
+        <div class="about__meetup">
           <p>
-            Aficionado Javascript de la première heure, utilisateur régulier ou
-            juste curieux ? Intéressé par les frameworks/tools JS ou fan des
-            saveurs vanille ? Le tout appliqué côté frontend, backend, voire
-            plus encore ?
+            Inscription sur notre page
+            <a href="https://www.meetup.com/jssophia">
+              <img
+                src="img/logo/meetup.svg"
+                alt="Meetup"
+                class="about__meetupLogo"
+              />
+              <span>www.meetup.com/jssophia</span>
+            </a>
           </p>
-          <p>
-            N'hésitez plus, venez participer au JSSophia !
-          </p>
-          <div class="about__meetup">
-            <p>
-              Inscription sur notre page
-              <a href="https://www.meetup.com/jssophia">
-                <img
-                  src="img/logo/meetup.svg"
-                  alt="Meetup"
-                  class="about__meetupLogo"
-                />
-                <span>www.meetup.com/jssophia</span>
-              </a>
-            </p>
+        </div>
+      </div>
+      <section class="session">
+        <div class="session__title">
+          <h2>JSSophia #6</h2>
+          <h3>21 Novembre 2019 - 18h30</h3>
+        </div>
+        <div class="talks">
+          <article class="talk">
+            <jssophia-talk
+              title="Web et confidentialité: Que pouvons nous faire pour protéger les informations sensibles ?"
+            ></jssophia-talk>
+            <jssophia-speaker
+              class="talk__info"
+              name="Jonathan Saez"
+              twitter="kandran"
+              github="kandran"
+              avatar="https://media.licdn.com/dms/image/C4E03AQFToRlKUZBccA/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=0UhibIH5cjYxm9TAs2DFQIQHnCvAI6xDH_Wwhq6qAqg"
+            ></jssophia-speaker>
+          </article>
+          <article class="talk">
+            <jssophia-talk
+              title="Comprendre et optimiser le Critical Rendering Path"
+            ></jssophia-talk>
+            <jssophia-speaker
+              name="Kanto Andriambelo"
+              github="Kaandriambelo"
+              avatar="https://media.licdn.com/dms/image/C4E03AQGc5eAPQkW7SQ/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=1jz0srt4Sk69miCNCZS6hJdGIJ2sqvlAWhYVKvF5OKA"
+            ></jssophia-speaker>
+          </article>
+          <article class="talk">
+            <jssophia-talk
+              title="Création d'une application web réactive en 20 min avec Feathers"
+            ></jssophia-talk>
+            <jssophia-speaker
+              name="Yann Deshayes"
+              avatar="https://media.licdn.com/dms/image/C5603AQGgP3wGt7KbBw/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=hFNBgyfBuTj9IQLMnNvkExT1l6wh5sUI43y8D1pOusE"
+              twitter="_Smi13"
+              github="ydeshayes"
+            ></jssophia-speaker>
+          </article>
+        </div>
+        <div class="sponsors">
+          <h4>Merci au sponsor de cette soirée !</h4>
+          <div class="sponsors__list">
+            <a href="https://www.telemaque.fr/" class="sponsor__link">
+              <img
+                src="img/logo/telemaque.png"
+                alt="Télémaque"
+                class="sponsor__logo"
+              />
+            </a>
           </div>
         </div>
+      </section>
+
       <section class="session">
         <div class="session__title">
           <h2>JSSophia #5</h2>
-          <h3>26 Septembre 2019 - 18h30</h3>
+          <h3>26 Septembre 2019</h3>
         </div>
         <div class="talks">
           <article class="talk">
