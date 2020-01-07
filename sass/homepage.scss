@@ -213,4 +213,8 @@ $logo-height: 60px;
       max-height: none;
     }
   }
+  // Logos are difficult to manage globally, so use specific dimensions
+  &__symphony {
+    min-height: 45px;
+  }
 }
