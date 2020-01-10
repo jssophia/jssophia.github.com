@@ -447,13 +447,13 @@ h5 {
 .speaker {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   align-items: center; }
   @media (min-width: 576px) {
     .speaker {
       margin-right: 3rem;
-      flex-direction: row;
-      align-items: flex-start; } }
+      flex-direction: row; } }
   .speaker__avatarWrapper {
     height: 100px;
     min-height: 100px;
@@ -625,9 +625,6 @@ h5 {
 
 .mu-widget a img {
   height: 28px; }
-
-.talks p {
-  margin: 0; }
 
 .speakers__list {
   display: flex;

@@ -2,6 +2,7 @@ class Talk extends HTMLElement {
   constructor() {
     super();
     this.title = this.getAttribute("title");
+    this.description = this.getAttribute("description");
     this.slides = this.getAttribute("slides");
   }
 
@@ -12,12 +13,20 @@ class Talk extends HTMLElement {
     return "";
   }
 
+  getDescriptionTag() {
+    if (this.description) {
+      return `<p class="talk__description">${this.description}</p>`;
+    }
+    return "";
+  }
+
   connectedCallback() {
     this.innerHTML = `
-        <span class="talk__title">
+        <h4 class="talk__title">
             ${this.title}
-        </span>
-        ${this.getSlidesTag()}`;
+        </h4>
+        ${this.getSlidesTag()}
+        ${this.getDescriptionTag()}`;
   }
 }
 

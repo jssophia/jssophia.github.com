@@ -1,12 +1,12 @@
 .speaker {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-top: $space-lg;
+  margin-bottom: $space-lg;
   align-items: center;
   @media (min-width: $devices-min-width-sm) {
     margin-right: 3rem;
     flex-direction: row;
-    align-items: flex-start;
   }
 
   &__avatarWrapper {
