@@ -490,9 +490,7 @@ h5 {
     white-space: nowrap; }
     @media (min-width: 576px) {
       .talk__slide {
-        display: inline;
-        vertical-align: text-bottom;
-        margin: 0 0 0 1rem; } }
+        margin: 0; } }
   .talk__url {
     padding: 0.2rem 1rem;
     border-radius: 1rem;

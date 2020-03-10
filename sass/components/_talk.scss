@@ -25,9 +25,7 @@
     margin: 1rem 0 0;
     white-space: nowrap;
     @media (min-width: $devices-min-width-sm) {
-      display: inline;
-      vertical-align: text-bottom;
-      margin: 0 0 0 1rem;
+      margin: 0;
     }
   }
 

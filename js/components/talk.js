@@ -25,8 +25,8 @@ class Talk extends HTMLElement {
         <h4 class="talk__title">
             ${this.title}
         </h4>
-        ${this.getSlidesTag()}
-        ${this.getDescriptionTag()}`;
+        ${this.getDescriptionTag()}
+        ${this.getSlidesTag()}`;
   }
 }
 
