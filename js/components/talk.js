@@ -4,6 +4,8 @@ class Talk extends HTMLElement {
     this.title = this.getAttribute("title");
     this.description = this.getAttribute("description");
     this.slides = this.getAttribute("slides");
+    this.format = this.getAttribute("format");
+    this.language = this.getAttribute("language");
   }
 
   getSlidesTag() {
@@ -20,12 +22,28 @@ class Talk extends HTMLElement {
     return "";
   }
 
+  getFormatTag() {
+    if (this.format) {
+      return `<p class="talk__format">${this.format}</p>`;
+    }
+    return "";
+  }
+
+  getLanguageTag() {
+    if (this.language) {
+      return `<p class="talk__language">${this.language}</p>`;
+    }
+    return "";
+  }
+
   connectedCallback() {
     this.innerHTML = `
         <h4 class="talk__title">
             ${this.title}
         </h4>
         ${this.getDescriptionTag()}
+        ${this.getFormatTag()}
+        ${this.getLanguageTag()}
         ${this.getSlidesTag()}`;
   }
 }

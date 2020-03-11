@@ -42,4 +42,17 @@
       background-color: $color-blue-dark;
     }
   }
+
+  &__format,
+  &__language {
+    display: inline-block;
+    color: $color-dark-grey;
+    font-weight: bold;
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
 }

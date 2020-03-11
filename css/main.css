@@ -501,6 +501,14 @@ h5 {
     .talk__url:hover {
       text-decoration: none;
       background-color: #001b66; }
+  .talk__format, .talk__language {
+    display: inline-block;
+    color: #757171;
+    font-weight: bold; }
+    .talk__format::before, .talk__language::before {
+      content: "["; }
+    .talk__format::after, .talk__language::after {
+      content: "]"; }
 
 /* The different pages specific styling */
 .home__menuAndHeader {
