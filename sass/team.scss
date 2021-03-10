@@ -1,4 +1,6 @@
 .team {
+  margin: 1em auto;
+
   &__menu {
     position: sticky;
     top: 0;
@@ -19,7 +21,7 @@
   }
 
   @media (min-width: $devices-min-width-xl) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   &__member {

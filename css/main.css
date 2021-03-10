@@ -716,6 +716,7 @@ h5 {
   color: grey; }
 
 .team {
+  margin: 1em auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
@@ -734,7 +735,7 @@ h5 {
       grid-template-columns: 1fr 1fr 1fr; } }
   @media (min-width: 1350px) {
     .team {
-      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
   .team__member {
     border: solid 1px #cecece;
     border-radius: 0.5rem;
