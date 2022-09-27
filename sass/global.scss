@@ -245,11 +245,13 @@ $color-hover-light-blue: #001b66;
 
     &:hover {
       background-color: $color-hover-light-blue;
+      & .menu__navigationBarLink {
+        color: $color-white-smoke !important;
+      }
     }
   }
 
   &__navigationBarLink {
-    color: $color-white-smoke;
     &:hover {
       text-decoration: none;
     }
@@ -409,3 +411,4 @@ $color-hover-light-blue: #001b66;
 .clearfix {
   *zoom: 1;
 }
+

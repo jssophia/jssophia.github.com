@@ -330,10 +330,10 @@ h5 {
           border-bottom: none; } }
     .menu__navigationBarItem:hover {
       background-color: #001b66; }
-  .menu__navigationBarLink {
-    color: #f7f7f7; }
-    .menu__navigationBarLink:hover {
-      text-decoration: none; }
+      .menu__navigationBarItem:hover .menu__navigationBarLink {
+        color: #f7f7f7 !important; }
+  .menu__navigationBarLink:hover {
+    text-decoration: none; }
   .menu__navigationTogglerLabelWrapper {
     display: inline-block;
     position: absolute;
