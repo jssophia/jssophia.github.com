@@ -31,20 +31,15 @@
     }
   }
 
-  &__menu.menu {
-    background-color: transparent;
-    .menu__title {
+  &__menu .menu__navigationBarLink {
+    @media (min-width: $devices-min-width-md) {
       color: $color-blue-dark;
     }
-    .menu__navigationBarLink {
-      color: $color-white-smoke;
-      &:hover {
-        color: $color-white-smoke;
-      }
-      @media (min-width: $devices-min-width-md) {
-        color: $color-blue-dark;
-      }
-    }
+  }
+
+  &__menu.menu {
+    background-color: transparent;
+
     .menu__navigationTogglerLine {
       border-top-color: $color-blue-dark;
     }
