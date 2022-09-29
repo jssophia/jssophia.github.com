@@ -246,7 +246,7 @@ $color-hover-light-blue: #001b66;
     &:hover {
       background-color: $color-hover-light-blue;
       & .menu__navigationBarLink {
-        color: $color-white-smoke !important;
+        color: $color-white-smoke;
       }
     }
   }

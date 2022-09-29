@@ -331,7 +331,7 @@ h5 {
     .menu__navigationBarItem:hover {
       background-color: #001b66; }
       .menu__navigationBarItem:hover .menu__navigationBarLink {
-        color: #f7f7f7 !important; }
+        color: #f7f7f7; }
   .menu__navigationBarLink:hover {
     text-decoration: none; }
   .menu__navigationTogglerLabelWrapper {
@@ -546,17 +546,12 @@ h5 {
     .home__subtitle {
       display: block; } }
 
+@media (min-width: 768px) {
+  .home__menu .menu__navigationBarLink {
+    color: #001b66; } }
+
 .home__menu.menu {
   background-color: transparent; }
-  .home__menu.menu .menu__title {
-    color: #001b66; }
-  .home__menu.menu .menu__navigationBarLink {
-    color: #f7f7f7; }
-    .home__menu.menu .menu__navigationBarLink:hover {
-      color: #f7f7f7; }
-    @media (min-width: 768px) {
-      .home__menu.menu .menu__navigationBarLink {
-        color: #001b66; } }
   .home__menu.menu .menu__navigationTogglerLine {
     border-top-color: #001b66; }
 
