@@ -719,10 +719,7 @@ h5 {
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-gap: 2rem;
-  margin-bottom: 1rem;
-  /*@media (min-width: $devices-min-width-lg) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }*/ }
+  margin-bottom: 1rem; }
   .team__menu {
     position: sticky;
     top: 0;
