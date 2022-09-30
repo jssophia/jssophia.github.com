@@ -16,10 +16,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  /*@media (min-width: $devices-min-width-lg) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }*/
-
   @media (min-width: $devices-min-width-xl) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
