@@ -662,6 +662,9 @@ h5 {
     .sponsors__list {
       display: block; } }
 
+.sponsor__white {
+  background-color: #036770; }
+
 .sponsor__link {
   width: 200px;
   height: 60px;
