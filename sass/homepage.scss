@@ -31,6 +31,10 @@
     }
   }
 
+  &__menu .menu__title {
+    color: $color-blue-dark;
+  }
+
   &__menu .menu__navigationBarLink {
     @media (min-width: $devices-min-width-md) {
       color: $color-blue-dark;
@@ -183,6 +187,11 @@
 
 $logo-width: 200px;
 $logo-height: 60px;
+
+.sponsor__white {
+  background-color: #036770;
+}
+
 .sponsor {
   &__link {
     width: $logo-width;
